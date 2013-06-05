@@ -1,0 +1,11 @@
+<%@ MasterClass="templateregistro"%>
+	<com:TContent ID="Cuerpo">
+		
+	
+	<com:TForm ID="form">
+	   
+	
+		 <h1>El <strong>Articulo</strong> se ha registrado satisfactoriamente</h1><br />
+		 
+		 </com:TForm>
+	</com:TContent>

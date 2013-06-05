@@ -1,0 +1,11 @@
+<%@ MasterClass="templateregistro"%>
+	<com:TContent ID="Cuerpo">
+		
+	
+	<com:TForm ID="form">
+	   
+	
+		 <h1>Registro Exitoso</h1><br />
+		 <h3>Usted sera redirigido a la pagina principal de <strong>donTrueque</strong> para que inicie sesion</h3>
+		 </com:TForm>
+	</com:TContent>

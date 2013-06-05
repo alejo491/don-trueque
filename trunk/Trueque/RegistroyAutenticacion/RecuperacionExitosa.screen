@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="8" width="777" height="833" text="www.trunicauca.com.co/RecuperacionContraseña" measuredWidth="777" measuredHeight="833"/>
+  <widgets xsi:type="model:TextArea" id="7" x="152" y="96" width="377" height="49" text="Se ha enviado un link de recuperacion a su correo electronico" measuredWidth="377" measuredHeight="49">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

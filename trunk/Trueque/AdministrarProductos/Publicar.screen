@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="5" x="96" y="8" width="777" height="761" text="www.trunicauca.com.co/Publicar" measuredWidth="777" measuredHeight="761"/>
+  <widgets xsi:type="model:HLine" id="6" x="96" y="112" width="777" measuredWidth="777" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="7" x="736" y="70" text="Nombre de Usuario" measuredWidth="108" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="8" x="176" y="176" width="601" height="561" text="Producto" measuredWidth="601" measuredHeight="561">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="249" y="533" text="*Nombre:*" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="11" x="249" y="560" text="*Descripcion:*" measuredWidth="73" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="249" y="624" text="*Categoria:*" measuredWidth="61" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="13" x="347" y="533" width="313" measuredWidth="313" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" id="14" x="347" y="570" width="313" height="45" measuredWidth="313" measuredHeight="45">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="15" x="347" y="624" width="134" measuredWidth="134" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="16" x="659" y="688" text="*Subir Articulo*" measuredWidth="96" measuredHeight="25" link="ProductoCargado.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="249" y="288" text="*Imagen:*" measuredWidth="50" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="18" x="659" y="288" measuredWidth="16" measuredHeight="16" icon="open (small)" link="CargarImagen.screen"/>
+  <widgets xsi:type="model:TextField" id="19" x="347" y="288" width="313" measuredWidth="313" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="20" x="347" y="328" width="246" height="185"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

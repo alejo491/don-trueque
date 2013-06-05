@@ -1,0 +1,1 @@
+<%@ MasterClass="templateregistrado"%><com:TContent ID="cphCuerpo"><p>	Usted es un usuario registrado ahora podra buscar articulos y enviar solicitudes de trueque a otros usuarios</p><h3><p> No olvides revisar tus solicitudes de trueque</p></h3></com:TContent>

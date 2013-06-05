@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="8" width="777" height="833" text="www.dontrueque.com.co/RecuperacionContraseña" measuredWidth="777" measuredHeight="833"/>
+  <widgets xsi:type="model:HLine" id="2" x="96" y="112" width="777" measuredWidth="777" measuredHeight="6"/>
+  <widgets xsi:type="model:Panel" id="5" x="128" y="136" width="305" height="153" measuredWidth="305" measuredHeight="153"/>
+  <widgets xsi:type="model:TextField" id="3" x="144" y="182" width="207" measuredWidth="207" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="4" x="144" y="160" text="*Nombre de Usuario**" measuredWidth="118" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="7" x="144" y="232" text="Siguiente" measuredWidth="69" measuredHeight="25" link="RecuperacionContraseña2.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

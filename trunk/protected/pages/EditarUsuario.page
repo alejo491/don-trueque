@@ -1,0 +1,113 @@
+<%@ MasterClass="templateadministrador" %>
+
+<com:TContent ID="cphCuerpo">
+	<div id="datos" align="left">
+		
+		<table>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="Nombre" Text="Nombre"/></strong>
+				</td>
+				<td>
+					<com:TLabel ID="Txtnombre" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="NNombre" Text="Nuevo Nombre"/></strong>
+				</td>
+				<td>
+					<com:TTextBox ID="TxtNNombre" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="Apellido" Text="Apellido"/></strong>
+				</td>
+				<td>
+					<com:TLabel ID="TxtApellido" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="NApellido" Text="Nuevo Apellido"/></strong>
+				</td>
+				<td>
+					<com:TTextBox ID="TxtNApellido" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="Contraena" Text="Contrasena"/></strong>
+				</td>
+				<td>
+					<com:TLabel ID="TxtPass" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="NContrasena" Text="Nueva Contrasena"/></strong>
+				</td>
+				<td>
+					<com:TTextBox ID="TxtNPass" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="Telefono" Text="Telefono"/></strong>
+				</td>
+				<td>
+					<com:TLabel ID="TxtTelefono" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="NTelefono" Text="Nuevo Telefono"/></strong>
+				</td>
+				<td>
+					<com:TTextBox ID="TxtNTelefono" Text=""/>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="Correo" Text="Correo electronico"/></strong>
+				</td>
+				<td>
+					<com:TLabel ID="TxtCorreo" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="NCorreo" Text="Nuevo Correo"/></strong>
+				</td>
+				<td>
+					<com:TTextBox ID="TxtNCorreo" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="NombreUsuario" Text="Nombre de Usuario"/></strong>
+				</td>
+				<td>
+					<com:TLabel ID="TxtUsuario" Text=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><com:TLabel ID="NUsuario" Text="Nuevo Nombre de Usuario"/></strong>
+				</td>
+				<td>
+					<com:TTextBox ID="TxtNUsuario" Text=""/>
+				</td>
+			</tr>
+
+
+
+		</table>
+		
+	</div>
+	
+	
+	
+</com:TContent>

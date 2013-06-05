@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="8" width="777" height="761" text="www.dontrueque.com.co/Publicar" measuredWidth="777" measuredHeight="761"/>
+  <widgets xsi:type="model:HLine" id="2" x="96" y="112" width="777" measuredWidth="777" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="3" x="736" y="70" text="Nombre de Usuario" measuredWidth="108" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Breadcrumbs" id="6" x="566" y="298" measuredWidth="3" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="0" height="23"/>
+  </widgets>
+  <widgets xsi:type="model:Window" id="7" x="144" y="160" width="681" height="369" text="*Abrir*" measuredWidth="681" measuredHeight="369"/>
+  <widgets xsi:type="model:HLine" id="9" x="144" y="229" width="681" measuredWidth="681" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" id="10" x="144" y="438" width="681" measuredWidth="681" measuredHeight="6"/>
+  <widgets xsi:type="model:VScrollbar" id="11" x="272" y="234" height="205" measuredWidth="17" measuredHeight="205"/>
+  <widgets xsi:type="model:VScrollbar" id="12" x="808" y="234" height="205" measuredWidth="17" measuredHeight="205"/>
+  <widgets xsi:type="model:Label" id="14" x="248" y="453" text="*Nombre:*" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="15" x="320" y="453" width="233" measuredWidth="233" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="16" x="619" y="453" width="190" text="Todos Los Archivos" measuredWidth="190" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="18" x="742" y="484" text="*Cancelar*" measuredWidth="67" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="384" y="338" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="384" y="254" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="21" x="464" y="338" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="22" x="544" y="338" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="619" y="338" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="24" x="696" y="338" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="25" x="464" y="254" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="26" x="544" y="254" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="27" x="619" y="254" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="28" x="696" y="254" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="29" x="160" y="189" measuredWidth="16" measuredHeight="16" foreground="#cccccc" icon="undo (small)"/>
+  <widgets xsi:type="model:Icon" id="30" x="184" y="189" measuredWidth="16" measuredHeight="16" foreground="#cccccc" icon="redo (small)"/>
+  <widgets xsi:type="model:Icon" id="31" x="384" y="407" measuredWidth="32" measuredHeight="32" icon="image (large)"/>
+  <widgets xsi:type="model:Icon" id="33" x="208" y="189" measuredWidth="16" measuredHeight="16" foreground="#cccccc" icon="desc (small)"/>
+  <widgets xsi:type="model:Combo" id="36" x="256" y="189" width="364" text="Escritorio" measuredWidth="364" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="37" x="320" y="196" width="10" height="10" measuredWidth="10" measuredHeight="10" icon="filled-arrow-right (small)"/>
+  <widgets xsi:type="model:Icon" id="38" x="619" y="189" width="22" height="23" measuredWidth="22" measuredHeight="23" icon="refresh (small)"/>
+  <widgets xsi:type="model:TextField" id="39" x="664" y="189" width="137" text="Buscar Escritorio" measuredWidth="137" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="40" x="785" y="193" measuredWidth="16" measuredHeight="16" icon="find (small)"/>
+  <widgets xsi:type="model:Button" id="41" x="664" y="484" text="*Abrir*" measuredWidth="48" measuredHeight="25" link="Publicar.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

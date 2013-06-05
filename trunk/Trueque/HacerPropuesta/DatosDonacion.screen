@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="13" y="3" width="904" height="593" text="www.trunicauca.com.co" measuredWidth="904" measuredHeight="593"/>
+  <widgets xsi:type="model:HLine" id="2" x="10" y="170" width="905" measuredWidth="905" measuredHeight="6"/>
+  <widgets xsi:type="model:VLine" id="3" x="131" y="175" height="428" measuredWidth="6" measuredHeight="428"/>
+  <widgets xsi:type="model:VLine" id="4" x="673" y="175" height="428" measuredWidth="6" measuredHeight="428"/>
+  <widgets xsi:type="model:Link" id="5" x="29" y="190" measuredWidth="3" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="104" y="24" text="trunicauca/principal" measuredWidth="112" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="7" x="690" y="190" width="209" height="133" text="Nombre Usuario" measuredWidth="209" measuredHeight="133">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="8" x="705" y="208" text="Editar Perfil" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="9" x="705" y="230" text="Mis Articulos" measuredWidth="72" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="10" x="705" y="253" text="Solicitudes de Trueque" measuredWidth="123" measuredHeight="23" link="SolicitudesPendientes.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="11" x="706" y="287" text="Cerrar Sesion" measuredWidth="89" measuredHeight="25" link="../Principal/Principal_invitado.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Breadcrumbs" id="12" x="29" y="145" text="Inicio,Solicitudes de trueque,Ver,Detalles de Solicitud/Datos Donacion,ConfirmacionSolicitud" measuredWidth="560" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="29" height="23" text="Inicio"/>
+    <items x="49" y="0" width="117" height="23" text="Solicitudes de trueque"/>
+    <items x="186" y="0" width="17" height="23" text="Ver"/>
+    <items x="223" y="0" width="195" height="23" text="Detalles de Solicitud/Datos Donacion"/>
+    <items x="438" y="0" width="119" height="23" text="ConfirmacionSolicitud"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="13" x="13" y="140" width="905" measuredWidth="905" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="14" x="18" y="41" text="Label" measuredWidth="33" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="31" y="212" text="Categorias" measuredWidth="63" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="16" x="31" y="230" text="Hogar" measuredWidth="36" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="17" x="31" y="252" text="Deportes" measuredWidth="50" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="18" x="31" y="275" text="Vehiculos" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="19" x="31" y="297" text="Niños" measuredWidth="34" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="20" x="31" y="319" text="Entretenimiento" measuredWidth="88" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="21" x="31" y="190" text="Inicio" measuredWidth="32" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="33" x="168" y="201" width="390" height="216" text="Datos" measuredWidth="390" measuredHeight="216">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="34" x="190" y="229" text="Nombre" measuredWidth="49" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="35" x="190" y="273" text="Cedula" measuredWidth="42" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="36" x="190" y="251" text="Apellido" measuredWidth="49" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="37" x="190" y="317" text="Contraseña" measuredWidth="65" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="38" x="190" y="295" text="Numero de la Tarjeta de Credito" measuredWidth="174" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="39" x="392" y="368" text="Confirmar Donacion" measuredWidth="128" measuredHeight="25" link="DonacionExitosa.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

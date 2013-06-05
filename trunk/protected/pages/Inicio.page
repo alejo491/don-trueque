@@ -1,0 +1,27 @@
+<%@ MasterClass="Masterpage" %>
+
+<com:TContent ID="cphCuerpo">
+	
+		<h2>Aprende a truequear</h2>
+		
+		<div id="pasos" class="test">
+			<com:TPanel>
+				<fieldset>
+					Hacemos posible el contacto entre usuarios que desean intercambiar 
+					objetos, es facil y sencillo, en esta pagina podras intercambiarlos
+					por otros objetos que te sean utiles.		
+					
+				</fieldset>
+				<fieldset>
+					1.<a href="?page=Registro">Registrate</a> para realizar los trueques.<br />
+					2.Agrega tus propios objetos.<br />
+					3.Realiza propuestas a usuarios para intercambiar tus objetos<br />
+					4.!Truequealo!<br />
+					
+				</fieldset>
+			</com:TPanel>
+			
+		</div>
+	
+	
+</com:TContent>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="104" y="24" width="673" height="529" text="dontrueque.com.co/registroExitoso" measuredWidth="673" measuredHeight="529"/>
+  <widgets xsi:type="model:TextArea" id="2" x="144" y="112" text="Su registro ha sido exitoso.&#xD;&#xA;*Bienvenido a dontrueque.com.co*&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;En este momento sera redireccionado a la pagina inicial para que pueda iniciar sesion." measuredWidth="460" measuredHeight="68">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

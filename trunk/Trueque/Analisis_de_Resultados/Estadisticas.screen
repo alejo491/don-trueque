@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="-2" y="-8" width="825" height="553" text="Browser&#xA;http://..." measuredWidth="825" measuredHeight="553"/>
+  <widgets xsi:type="model:HLine" id="2" x="-2" y="128" width="825" measuredWidth="825" measuredHeight="6"/>
+  <widgets xsi:type="model:VLine" id="4" x="112" y="128" height="416" measuredWidth="6" measuredHeight="416"/>
+  <widgets xsi:type="model:VLine" id="5" x="680" y="133" height="413" measuredWidth="6" measuredHeight="413"/>
+  <widgets xsi:type="model:Button" id="6" x="288" y="256" width="147" text="Consultar Permutas" measuredWidth="147" measuredHeight="25">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="311" y="52" text="Estadisticas" measuredWidth="220" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="9" x="470" y="160" width="177" height="134" measuredWidth="177" measuredHeight="134"/>
+  <widgets xsi:type="model:DateField" id="11" x="187" y="170" width="83" text="  /  /  " measuredWidth="83" measuredHeight="23"/>
+  <widgets xsi:type="model:DateField" id="12" x="187" y="204" width="83" text="  /  /  " measuredWidth="83" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="13" x="144" y="170" text="desde: " measuredWidth="44" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="14" x="144" y="204" text="hasta:" measuredWidth="37" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="17" x="505" y="177"/>
+  <widgets xsi:type="model:Combo" id="18" x="144" y="342" text="Publicación de Articulos" measuredWidth="157" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="144" y="312" text="Otras Estadisticas" measuredWidth="100" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="20" x="336" y="468" width="62" text="Ver" measuredWidth="62" measuredHeight="25">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="23" x="201" y="376" width="83" text="  /  /  " measuredWidth="83" measuredHeight="23"/>
+  <widgets xsi:type="model:DateField" id="24" x="200" y="409" width="83" text="  /  /  " measuredWidth="83" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="25" x="156" y="375" text="desde: " measuredWidth="44" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="26" x="157" y="408" text="hasta:" measuredWidth="37" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="29" x="470" y="364" width="177" height="134" measuredWidth="177" measuredHeight="134"/>
+  <widgets xsi:type="model:Image" id="30" x="505" y="381"/>
+  <widgets xsi:type="model:List" id="32" x="157" y="236" text="[x] Grafica tipo pastel&#xA;~[ ] Grafica tipo barras~" measuredWidth="125" measuredHeight="48" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="125" height="22" text="[x] Grafica tipo pastel"/>
+    <items x="0" y="24" width="125" height="22" text="~[ ] Grafica tipo barras~"/>
+  </widgets>
+  <widgets xsi:type="model:List" id="33" x="164" y="450" text="[x] Grafica tipo pastel&#xA;~[ ] Grafica tipo barras~" measuredWidth="125" measuredHeight="48" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="125" height="22" text="[x] Grafica tipo pastel"/>
+    <items x="0" y="24" width="125" height="22" text="~[ ] Grafica tipo barras~"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

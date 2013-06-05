@@ -1,0 +1,32 @@
+
+
+<com:TContent ID="cphCuerpo">
+
+	<fieldset><legend>Articulo</legend>
+		<table>
+			<tr>
+				<td>
+					<com:TImage ID="image" ImageUrl="" Width="300px" AlternateText=""/>
+				</td>
+				<td>
+					
+					<strong><com:TLabel ID="Nombre" Text="Nombre:"/></strong>
+					<com:TLabel ID="Lbl_Nombre" Text=""/><br />
+					<strong><com:TLabel ID="Ubicacion" Text="Ubicaci&oacute;n:"/></strong>
+					<com:TLabel ID="Lbl_Ubicacion"" Text=""/><br />
+					<strong><com:TLabel ID="Descripcion" Text="Descripci&oacute;n:"/></strong>
+					<com:TLabel ID="Lbl_Descripcion" Text=""/><br />
+					<strong><com:TLabel ID="Categoria" Text="Categoria:"/></strong>
+					<com:TLabel ID="Lbl_Categoria" Text=""/><br /><br />
+					
+					<com:TButton ID="btn_solicitud"
+						Text="Hacer Propuesta"
+						OnClick="Hacer_propuesta"/>
+					
+				</td>
+			</tr>
+		</table>
+		
+	</fieldset>
+	
+</com:TContent>

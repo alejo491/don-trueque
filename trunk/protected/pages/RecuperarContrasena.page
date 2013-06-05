@@ -1,0 +1,23 @@
+<%@ MasterClass="templateregistro"%>
+<com:TContent ID="Cuerpo">
+	<com:TForm ID="form">
+		<fieldset><legend><h3>Recuperacion de Contrase&ntilde;a</h3></legend>
+			<br /><p>Debe llenar los siguientes datos para la recuperacion de la contrase&ntilde;a</p>
+			<com:TLabel ID="lbl_NombreU" Text="Nombre de Usuario"/>
+			<com:TTextBox ID="txt_NombreU" Text=""/><br />
+			
+			<com:TRequiredFieldValidator ID="valnombreU"
+				ControlToValidate="txt_NombreU"
+				ErrorMessage="Debe Llenar el Nombre de Usuario para recuperar la contrase&ntilde;a"
+				Display="Dynamic"/><br /><br />
+			
+			
+			<com:TLabel ID="error" Text=""/>	
+		
+			
+			
+			<com:TButton ID="btn_Siguiente" Text="Siguiente" OnClick="siguiente"/>	
+		</fieldset>
+	</com:TForm>
+	
+</com:TContent>
