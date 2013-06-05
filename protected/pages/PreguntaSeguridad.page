@@ -1,0 +1,16 @@
+<%@ MasterClass="templateregistro"%>
+   <com:TContent ID="Cuerpo">
+	<com:TForm ID="form">
+		<fieldset><legend>Recuperar Contrase&ntilde;a</legend>
+				<strong><com:TLabel ID="lbl_preg" Text="Pregunta:"/></strong>
+				<com:TLabel ID="txt_Pregunta" Text=""/><br />
+				
+				<strong><com:TLabel ID="lbl_Resp" Text="Digite su respuesta:"/></strong>
+				<com:TTextBox ID="txt_Resp" Text=""/><com:TLabel ID="lbl" Text="La respuesta es sencible a mayusculas"/><br /><br />
+				
+				<com:TButton ID="btn_Fin" Text="Finalizar" OnClick="fin_Clicked"/>
+		</fieldset>
+	
+	</com:TForm>
+	
+</com:TContent>

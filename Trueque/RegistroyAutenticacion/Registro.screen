@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="8" width="777" height="833" text="www.dontrueque.com.co/Registro" measuredWidth="777" measuredHeight="833"/>
+  <widgets xsi:type="model:Button" id="2" x="733" y="70" width="121" height="33" text="Iniciar Sesion" measuredWidth="121" measuredHeight="33" link="InicioSesion.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="3" x="96" y="112" width="777" measuredWidth="777" measuredHeight="6"/>
+  <widgets xsi:type="model:Panel" id="4" x="152" y="128" width="238" height="703" measuredWidth="238" measuredHeight="703"/>
+  <widgets xsi:type="model:Button" id="5" x="162" y="791" width="87" height="30" text="Registrarme" measuredWidth="87" measuredHeight="30" link="RegistroExitoso.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="6" x="162" y="166" width="100" text="%(color:gray)Nombres%" measuredWidth="100" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="7" x="268" y="166" width="101" text="%(color:gray)Apellidos%" measuredWidth="101" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="8" x="162" y="222" width="207" measuredWidth="207" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="9" x="162" y="280" width="100" measuredWidth="100" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="10" x="162" y="334" width="100" measuredWidth="100" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="11" x="162" y="446" width="118" measuredWidth="118" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="12" x="162" y="502" width="207" text="%(color:gray)xxxx@xxxx.com%" measuredWidth="207" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="13" x="162" y="258" text="*Contraseña**" measuredWidth="72" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="14" x="162" y="144" text="*Nombre**" measuredWidth="56" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="162" y="200" text="*Nombre de Usuario**" measuredWidth="118" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="162" y="312" text="*Confirma tu contraseña**" measuredWidth="140" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="17" x="162" y="390" width="143" text="  %(color:gray)Dia   /  Mes   /  Año%" measuredWidth="143" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="18" x="162" y="368" text="*Fecha de Nacimiento**" measuredWidth="126" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="162" y="424" text="*Telefono**" measuredWidth="60" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="162" y="480" text="*Direccion de correo electronico actual**" measuredWidth="222" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="30" x="389" y="280" width="211" height="69" text="Usa ocho caracteres como mínimo. No uses una contraseña de otro sitio ni un nombre demasiado común." measuredWidth="211" measuredHeight="69" position="topLeft">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="32" x="593" y="70" text="[he olvidado la contraseña]" measuredWidth="140" measuredHeight="23" link="RecuperacionContraseña.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="33" x="549" y="90" text="[He olvidado el nombre de usuario]" measuredWidth="184" measuredHeight="23" link="RecuperacionContraseña2.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="34" x="342" y="688" height="94" measuredWidth="17" measuredHeight="94"/>
+  <widgets xsi:type="model:TextArea" id="35" x="162" y="688" width="181" height="94" text="Polticias de privacidad...........&#xD;&#xA;restricciones" measuredWidth="181" measuredHeight="94">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" id="21" x="172" y="736" measuredWidth="21" measuredHeight="23">
+    <font bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="29" x="192" y="736" text="Acepto las Condiciones y \nrestricciones de trunicauca" measuredWidth="146" measuredHeight="38">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="36" x="162" y="536" text="*Pregunta deSeguridad**" measuredWidth="134" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="39" x="162" y="558" width="207" text="pregunta1" measuredWidth="207" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="40" x="162" y="614" width="207" measuredWidth="207" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="41" x="162" y="592" text="*Respuesta**" measuredWidth="67" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

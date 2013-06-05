@@ -1,0 +1,202 @@
+<%@ MasterClass="templateregistro"%>
+   <com:TContent ID="Cuerpo">
+    
+    <com:TForm ID="form2">
+       
+    
+         <h1>Registro de Nuevo Usuario</h1><br />
+         <table>
+             <td><strong><com:TLabel ID="mensaje_campos" Text="Los campos marcados con (*) son obligatorios" forecolor="darkgrey"/></strong></td><br />
+             <tr>
+                 <td><strong>Nombre*</strong></td><td><strong>Apellido*</strong></td>
+             </tr>
+             
+             <tr>
+                 
+                  <td>
+                        <com:TTextBox ID="txt_nombre" Text="" /><br />
+                        
+                        <com:TRequiredFieldValidator ID="val1"
+                           ControlToValidate="txt_nombre"
+                           ErrorMessage="Debe ingresar un nombre"
+                           Display="Dynamic"/><br />
+                           
+                        <com:TCustomValidator ID="val14"
+                              ControlToValidate="txt_nombre"
+                              OnServerValidate="validar_string"
+                              ErrorMessage="No se aceptan numeros en este campo"
+                              Display="Dynamic"/>
+                  </td>
+                  <td>
+                     
+                        <com:TTextBox ID="txt_apellido" Text="" /><br />
+                     
+                        <com:TRequiredFieldValidator ID="val2"
+                           ControlToValidate="txt_apellido"
+                           ErrorMessage="Debe ingresar un apellido"
+                           Display="Dynamic"/><br />
+                        <com:TCustomValidator ID="val15"
+                           ControlToValidate="txt_apellido"
+                           OnServerValidate="validar_string"
+                           
+                           ErrorMessage="No se aceptan numeros en este campo"
+                           Display="Dynamic"/>
+                     
+                     
+                     </td>
+                  
+                    
+             </tr>
+             
+             <tr>
+                 <td><strong>Nombre de Usuario*</strong></td>
+             </tr>
+             <tr>
+                 
+                  <td>
+                     <com:TTextBox ID="txt_nombre_usuario" Text=""/><br />
+                     
+                     <com:TRequiredFieldValidator ID="val3"
+                       ControlToValidate="txt_nombre_usuario"
+                       ErrorMessage="Debe ingresar un nombre de usuario"
+                       Display="Dynamic"/><br />
+                       
+                     <com:TCustomValidator ID="val16"
+                        ControlToValidate="txt_nombre_usuario"
+                        OnServerValidate="validar_string"
+                        
+                        ErrorMessage="El nombre de usuario debe tener almenos una letra"
+                        Display="Dynamic"/><br />
+                     <com:TLabel ID="lbl_val" style="color:red; Enabled="False" Visible="False" Text="El nombre de usuario ya existe"/>
+                       
+                  </td>
+             </tr>
+             <tr>
+                 <td><strong>Contrase&ntilde;a*</strong></td>
+             </tr>
+             <tr>
+                 <td>
+                     <com:TTextBox ID="txt_contrasena" TextMode="Password"/><strong><com:TLabel ID="mensaje_contrasena" Text="Este campo requiere m&iacute;nimo 6 caracteres" forecolor = "darkgrey"/></strong><br />
+                    
+                     <com:TRequiredFieldValidator ID="val4"
+                       ControlToValidate="txt_contrasena"
+                       ErrorMessage="Debe ingresar una contrase&ntilde;a"
+                       Display="Dynamic"/><br />
+                     <com:TCustomValidator ID="val17"
+                       ControlToValidate="txt_contrasena"
+                       OnServerValidate="validar_tamano"
+                           
+                       ErrorMessage="la contrase&ntilde;a de tener almenos 4 caracteres"
+                       Display="Dynamic"/>
+                  </td>
+             </tr>
+             <tr>
+                 <td> <strong>Confirmar Contrase&ntilde;a*</strong></td>
+             </tr>
+             <tr>
+                 <td>
+                    <com:TTextBox ID="txt_contrasena_conf" TextMode="Password"/><br />
+                    
+                    <com:TRequiredFieldValidator ID="val5"
+                       ControlToValidate="txt_contrasena_conf"
+                       ErrorMessage="Debe escribir la contase&ntilde;a de nuevo"
+                       Display="Dynamic"/><br />
+                       
+                    <com:TCompareValidator ID="val6"
+                       ControlToValidate="txt_contrasena"
+                       ControlToCompare="txt_contrasena_conf"
+                       
+                       Operator="Equal"
+                       ErrorMessage="Deben coincidir las contrase&ntilde;as"
+                       Display="Dynamic"/>
+                  </td>
+             </tr>
+             <tr>
+                 <td> <strong>Fecha de Nacimiento*</strong></td>
+             </tr>
+             <tr>
+                 <td>
+                    
+                 
+                     
+                        <com:TDatePicker ID="fecha_nac"
+                        DateFormat="yyyy-MMMM-dd"
+                        Mode="Basic"
+                        FromYear="1965"
+                        Culture="es"
+                        UpToYear="1995"	
+                        InputMode="DropDownList"/>
+                     
+                 </td>
+             </tr>
+             <tr>
+                 <td><strong>Telefono</strong></td>
+             </tr>
+             <tr>
+                 <td><com:TTextBox ID="txt_telefono" Text=""/></td>
+             </tr>
+             <tr>
+                 <td><strong>Correo Electronico*</strong></td>
+             </tr>
+             <tr>
+                 <td>
+                    <com:TTextBox ID="txt_correo" Text=""/><br />
+                    
+                    <com:TRequiredFieldValidator ID="val7"
+                       ControlToValidate="txt_correo"
+                       ErrorMessage="Debe escribir un correo"
+                       Display="Dynamic"/><br />
+                     <com:TEmailAddressValidator ID="val8"
+                        ControlToValidate="txt_correo"
+                        ErrorMessage="Debe escribir un correo valido"
+                        Display="Dynamic"/>
+                  </td>
+             </tr>
+             <tr>
+                 <td><strong>Pregunta de seguridad*</strong></td>
+             </tr>
+             <tr>
+                 <td>
+                    <com:TTextBox ID="txt_pregunta" Text=""/><br />
+                    
+                    <com:TRequiredFieldValidator ID="val9"
+                       ControlToValidate="txt_pregunta"
+                       ErrorMessage="Debe escribir una pregunta de seguridad"
+                       Display="Dynamic"/>
+                  </td>
+             </tr>
+             <tr>
+                 <td><strong>Respuesta*</strong></td>
+             </tr>
+             <tr>
+                 <td>
+                    <com:TTextBox ID="txt_respuesta" Text=""/><br />
+                    
+                    <com:TRequiredFieldValidator ID="val10"
+                       ControlToValidate="txt_respuesta"
+                       ErrorMessage="Debe escribir una repuesta"
+                       Display="Dynamic"/>
+                  </td>
+             </tr>
+             
+             <tr>
+                  <td>
+                       <com:TTextBox ID="t001" ReadOnly="True" TextMode="MultiLine"Text=""/><br />
+                       
+                       <com:TCheckBox ID="chk_condiciones" value=1 Text="He leido y acepto las condiciones"/><br />
+                       
+                       <com:TLabel ID="lbl_val1" style="color:red; Enabled="False" Visible="False" Text="Debe aceptar las condiciones para registrarse"/>
+                  </td>
+             </tr>
+             <tr>
+                 <td>
+                    <com:TButton ID="btn_registrarse"
+                       Text="Registrarse"
+                       OnClick="btn_registrarse_click"/>
+                 </td>
+                    
+             </tr>
+         </table>
+  </com:TForm>
+</com:TContent>   
+ 

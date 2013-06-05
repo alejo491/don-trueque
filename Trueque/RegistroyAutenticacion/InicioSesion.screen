@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="7" x="96" y="8" width="777" height="761" text="www.dontrueque.com.co" measuredWidth="777" measuredHeight="761"/>
+  <widgets xsi:type="model:Panel" id="1" x="592" y="127" width="238" height="216" measuredWidth="238" measuredHeight="216"/>
+  <widgets xsi:type="model:Button" id="2" x="602" y="271" width="87" height="30" text="Iniciar Sesion" measuredWidth="87" measuredHeight="30" link="../Principal/Principal_Registrado.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="3" x="602" y="165" width="207" text="Correo Electronico" measuredWidth="207" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="4" x="602" y="223" width="100" text="Text field" measuredWidth="100" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="602" y="201" text="Contraseña" measuredWidth="65" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="602" y="143" text="Nombre de Usuario" measuredWidth="108" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="14" x="96" y="112" width="777" measuredWidth="777" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="15" x="681" y="70" text="Usted no ha iniciado sesion" measuredWidth="149" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="192" y="32" text="dontrueque/InicioSesion" measuredWidth="135" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

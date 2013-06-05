@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="8" width="777" height="833" text="www.dontrueque.com.co/RecuperacionContraseña" measuredWidth="777" measuredHeight="833"/>
+  <widgets xsi:type="model:TextArea" id="6" x="128" y="144" width="289" height="33" text="Selecciona una opcion para restablecer tu contraseña" measuredWidth="289" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="7" x="131" y="97" text="Restablecer Contraseña" measuredWidth="169" measuredHeight="28">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:List" id="8" x="131" y="200" text="(o) Enviarme por correo electronico un vinculo de restablecimiento.&#xA;~( ) Pregunta de seguridad~&#xA;" measuredWidth="367" measuredHeight="48" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="367" height="22" text="(o) Enviarme por correo electronico un vinculo de restablecimiento."/>
+    <items x="0" y="24" width="367" height="22" text="~( ) Pregunta de seguridad~"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="9" x="131" y="280" text="Siguiente" measuredWidth="69" measuredHeight="25" link="RecuperacionExitosa.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

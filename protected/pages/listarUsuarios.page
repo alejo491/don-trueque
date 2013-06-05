@@ -1,0 +1,61 @@
+<%@ MasterClass="templateadministrador" %>
+
+<com:TContent ID="cphCuerpo">
+	<div align "center">
+		<div >
+		<table>
+	 
+		<com:TDataGrid ID="ver"
+		DataKeyField="ID_USUARIO"
+		
+		
+		AutoGenerateColumns="false"
+		OnEditCommand="editar_click" 
+		OnDeleteCommand="borrar_click"
+		ItemStyle.BackColor="#BFCFFF"
+		PageSize="5"
+		AlternatingItemStyle.BackColor="#E6ECFF"
+		HeaderStyle.BackColor="white"
+		HeaderStyle.ForeColor="5a5389"
+		>
+		
+		<com:TBoundColumn ID="column1"
+			HeaderText="ID USUARIO"
+			DataField="ID_USUARIO"/>
+		
+		<com:TBoundColumn ID="column4"
+			HeaderText="NICK"
+			DataField="NICK"/>
+		
+		<com:TBoundColumn ID="column5"
+			HeaderText="CORREO"
+			DataField="CORREO"/>
+		<com:TBoundColumn ID="column6"
+			HeaderText="TIPO"
+			DataField="tipo"/>
+		<com:TButtonColumn
+			HeaderText="Accion"
+			Text="Editar"
+			ButtonType="PushButton"
+			CommandName="edit" />
+		<com:TButtonColumn
+			HeaderText="Accion"
+			Text="Borrar"
+			ButtonType="PushButton"
+			CommandName="delete" />	
+		
+		
+	    </com:TDataGrid>
+			
+			<com:TPager ID="pager"
+			ControlToPaginate="ver"
+			
+			OnPageIndexChanged="PageChanged"
+			Mode="Numeric"
+			ButtonType="LinkButton"/>
+	 
+	 	</table>	
+	 	</div>
+	</div>	
+	
+</com:TContent>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="9" x="96" y="8" width="777" height="761" text="www.dontrueque.com.co/Publicar/ProductoCargado" measuredWidth="777" measuredHeight="761"/>
+  <widgets xsi:type="model:Group" id="10" x="176" y="144" width="617" height="465" text="*Articulo Agregado*" measuredWidth="617" measuredHeight="465">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="249" y="194" text="*Imagen:*" measuredWidth="50" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="16" x="347" y="200" width="286" height="217"/>
+  <widgets xsi:type="model:Label" id="17" x="249" y="448" text="*Nombre:*" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="249" y="488" text="*Descripcion:*" measuredWidth="73" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="249" y="560" text="*Categoria:*" measuredWidth="61" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="20" x="347" y="448" width="313" measuredWidth="313" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" id="21" x="347" y="496" width="313" height="45" measuredWidth="313" measuredHeight="45">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="22" x="347" y="560" width="313" measuredWidth="313" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="23" x="722" y="624" text="Aceptar" measuredWidth="61" measuredHeight="25" link="AdministraProductos.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,30 @@
+
+
+
+<com:TContent ID="cphCuerpo">
+	<div id="test334">
+		
+	
+	<h1 color="grey"><com:TLabel ID="lbl_titulo" Text=""/></h1><br /><br /><br />
+	
+	<com:TDataGrid ID="Resultados"
+		DataKeyField=""
+		AutoGenerateColumns="false"
+		AllowSorting="false"
+		AllowPaging="false"
+		OnItemCreated="datalist_OnItemCreated"
+		OnEditCommand="datalist_OnEdit"
+		OnCancelCommand="datalist_OnCancel"
+		OnUpdateCommand="datalist_OnUpdate"
+		OnDeleteCommand="datalist_OnDelete">
+		
+	</com:TDataGrid>
+	
+	<com:TPager ID="pager"
+		ControlToPaginate="Resultados"
+		OnPageIndexChanged="RenderCallBack"
+		Mode="Numeric"/>
+	
+	
+	</div>
+</com:TContent>

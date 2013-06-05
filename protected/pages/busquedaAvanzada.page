@@ -1,0 +1,60 @@
+
+
+<com:TContent ID="cphCuerpo">
+	<fieldset>
+		<legend><h2>Busqueda Avanzada</h2></legend>
+			<br />
+			<br />
+			<table>
+				<tr>
+					<td><strong>Palabra Clave:</strong></td><td><com:TTextBox ID="p_clave" Text=""/><br /></td>
+				</tr>
+				<tr>
+					<td><strong>Buscar por categoria:</strong></td><td><com:TDropDownList ID="lst_categorias">
+						<com:TListItem Text="Categoria" Value="null" />
+							<com:TListItem Text="Tecnologia" Value="Tecnologia" />
+							<com:TListItem Value="Vehiculos" Text="Vehiculos"/>
+							<com:TListItem Value="Electrodomesticos" Text="Electrodomesticos"/>
+							<com:TListItem Value="Juguetes" Text="Juguetes"/>
+							<com:TListItem Value="Libros" Text="Libros"/>
+							<com:TListItem Value="Peliculas" Text="Peliculas"/>
+							<com:TListItem Value="Videojuegos" Text="Videojuegos"/>
+					</com:TDropDownList><br /></td>
+				</tr>
+		
+				<tr>
+					<td><strong>Buscar solo en:</strong></td><td><com:TDropDownList ID="lst_ciudades" DataValueField="id" DataTextField="ciudad"></com:TDropDownList><br /></td>
+				</tr>
+				<tr>
+					<td><strong>Articulos publicados:</strong></td><td>desde:<com:TDatePicker ID="date_desde"
+						DateFormat="yyyy-MMMM-dd"
+						Culture="es"
+						FromYear="1965"
+						UpToYear="2013"
+						Mode="Clickable"
+						InputMode="DropDownList"/><br /> hasta: <com:TDatePicker ID="date_hasta"
+							DateFormat="yyyy-MMMM-dd"
+							Culture="es"
+							FromYear="1965"
+							UpToYear="2013"
+							Mode="Clickable"
+							InputMode="DropDownList"/><br /></td>
+				</tr>
+				<tr>
+					<td></td><td><com:TButton ID="btn_buscar"
+						Text="Buscar"
+						OnClick="buscar_click"/></td>
+				</tr>
+			</table>
+		
+		
+		
+	
+		
+		
+	</fieldset>
+	
+	
+	
+	
+</com:TContent>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="51" width="904" height="593" text="www.dontrueque.com.co" measuredWidth="904" measuredHeight="593"/>
+  <widgets xsi:type="model:HLine" id="52" x="-1" y="160" width="905" measuredWidth="905" measuredHeight="6"/>
+  <widgets xsi:type="model:VLine" id="53" x="120" y="165" height="428" measuredWidth="6" measuredHeight="428"/>
+  <widgets xsi:type="model:SearchField" id="54" x="135" y="180" width="313" text="Buscar" measuredWidth="313" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VLine" id="55" x="662" y="165" height="428" measuredWidth="6" measuredHeight="428"/>
+  <widgets xsi:type="model:Link" id="57" x="543" y="180" text="Busqueda Avanzada" measuredWidth="109" measuredHeight="23" link="../Busqueda/BusquedaAvanzada.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="58" x="18" y="180" measuredWidth="3" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="65" x="95" y="24" text="dontrueque/principal_Administrador" measuredWidth="199" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="66" x="679" y="180" width="209" height="173" text="Nombre Administador" measuredWidth="209" measuredHeight="173">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="67" x="695" y="202" text="Editar Perfil" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="68" x="694" y="222" text="Administrar Usuarios" measuredWidth="113" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="69" x="695" y="242" text="Administrar Articulos" measuredWidth="115" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="70" x="689" y="306" text="Cerrar Sesion" measuredWidth="89" measuredHeight="25" link="Principal_invitado.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Breadcrumbs" id="71" x="20" y="135" text="Inicio,PricipalAdministrador" measuredWidth="167" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="29" height="23" text="Inicio"/>
+    <items x="49" y="0" width="115" height="23" text="PricipalAdministrador"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="72" x="2" y="130" width="905" measuredWidth="905" measuredHeight="6"/>
+  <widgets xsi:type="model:WidgetGroup" id="73" x="135" y="238" measuredWidth="519" measuredHeight="351">
+    <widgets xsi:type="model:WidgetGroup" id="74" measuredWidth="517" measuredHeight="73">
+      <widgets xsi:type="model:Panel" id="75" width="517" height="73" measuredWidth="517" measuredHeight="73"/>
+      <widgets xsi:type="model:Label" id="76" x="67" y="10" width="119" text="Nombre del Producto" measuredWidth="119" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Label" id="77" x="68" y="26" text="Valor:" measuredWidth="35" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Link" id="78" x="67" y="44" text="Ver Detalles" measuredWidth="64" measuredHeight="23" link="Detalles_producto.screen">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Icon" id="79" x="8" y="6" width="49" height="67" measuredWidth="49" measuredHeight="67" icon="image (large)" link="Detalles_producto.screen"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="80" x="2" y="167" measuredWidth="517" measuredHeight="73">
+      <widgets xsi:type="model:Panel" id="81" width="517" height="73" measuredWidth="517" measuredHeight="73"/>
+      <widgets xsi:type="model:Label" id="82" x="67" y="10" width="119" text="Nombre del Producto" measuredWidth="119" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Label" id="83" x="68" y="26" text="Valor:" measuredWidth="35" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Link" id="84" x="67" y="44" text="Ver Detalles" measuredWidth="64" measuredHeight="23" link="Detalles_producto.screen">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Icon" id="85" x="8" y="6" width="49" height="67" measuredWidth="49" measuredHeight="67" icon="image (large)" link="Detalles_producto.screen"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="86" x="1" y="83" measuredWidth="517" measuredHeight="73">
+      <widgets xsi:type="model:Panel" id="87" width="517" height="73" measuredWidth="517" measuredHeight="73"/>
+      <widgets xsi:type="model:Label" id="88" x="67" y="10" width="119" text="Nombre del Producto" measuredWidth="119" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Label" id="89" x="68" y="26" text="Valor:" measuredWidth="35" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Link" id="90" x="67" y="44" text="Ver Detalles" measuredWidth="64" measuredHeight="23" link="Detalles_producto.screen">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Icon" id="91" x="8" y="6" width="49" height="67" measuredWidth="49" measuredHeight="67" icon="image (large)" link="Detalles_producto.screen"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="92" x="1" y="248" measuredWidth="517" measuredHeight="73">
+      <widgets xsi:type="model:Panel" id="93" width="517" height="73" measuredWidth="517" measuredHeight="73"/>
+      <widgets xsi:type="model:Label" id="94" x="67" y="10" width="119" text="Nombre del Producto" measuredWidth="119" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Label" id="95" x="68" y="26" text="Valor:" measuredWidth="35" measuredHeight="23">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Link" id="96" x="67" y="44" text="Ver Detalles" measuredWidth="64" measuredHeight="23" link="Detalles_producto.screen">
+        <font/>
+      </widgets>
+      <widgets xsi:type="model:Icon" id="97" x="8" y="6" width="49" height="67" measuredWidth="49" measuredHeight="67" icon="image (large)" link="Detalles_producto.screen"/>
+    </widgets>
+    <widgets xsi:type="model:LinkBar" id="98" x="256" y="328" text="1|2|3" measuredWidth="27" measuredHeight="23">
+      <font/>
+      <items x="0" y="0" width="26" height="23" text="1|2|3"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="99" x="127" y="221" width="536" measuredWidth="536" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="100" x="695" y="261" text="Ver Estadisticas" measuredWidth="83" measuredHeight="23" link="../Analisis_de_Resultados/Estadisticas.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="101" x="20" y="197" text="Categorias" measuredWidth="63" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="102" x="20" y="215" text="Hogar" measuredWidth="36" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="103" x="20" y="237" text="Deportes" measuredWidth="50" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="104" x="20" y="260" text="Vehiculos" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="105" x="20" y="282" text="Niños" measuredWidth="34" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="106" x="20" y="304" text="Entretenimiento" measuredWidth="88" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="107" x="20" y="175" text="Inicio" measuredWidth="32" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="108" x="464" y="179" text="*Buscar*" measuredWidth="57" measuredHeight="25" link="../Busqueda/BusquedaExitosa.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,69 @@
+<%@ MasterClass="templateregistrado" %>
+
+<com:TContent ID="cphCuerpo">
+	<div align="center">
+		
+	
+	<table>
+		<tr>
+			<com:TDataGrid ID="listaarticulo"
+				DataKeyField="ID_ARTICULO"
+				AutoGenerateColumns="false"
+				AllowSorting="false"
+				AllowPaging="false"
+				
+				OnEditCommand="editar_articulo" 
+				OnDeleteCommand="borrar_articulo"
+				ItemStyle.BackColor="#BFCFFF"
+				AlternatingItemStyle.BackColor="#E6ECFF"
+				HeaderStyle.BackColor="white"
+				HeaderStyle.ForeColor="5a5389"
+				>
+				
+				
+						<com:TBoundColumn 
+							HeaderText="Nombre"
+							DataField="NOMBRE_PRODUCTO"
+							/>
+						<com:TBoundColumn 
+							HeaderText="Categoria"
+							DataField="CATEGORIA"
+							
+							/>
+						<com:TBoundColumn 
+							HeaderText="Descripcion"
+							DataField="DESCRIPCION"
+							
+							/>
+						<com:TBoundColumn 
+							HeaderText="Fecha Publicacion"
+							DataField="FECHA_PUBLICACION"/>
+						<com:TButtonColumn
+							HeaderText="Accion"
+							Text="Editar"
+							ButtonType="PushButton"
+							CommandName="edit" />
+						<com:TButtonColumn
+							HeaderText="Accion"
+							Text="Borrar"
+							ButtonType="PushButton"
+							CommandName="delete" />
+						
+						
+			</com:TDataGrid>
+			<com:TPager ID="pager"
+		    ControlToPaginate="listaarticulo"
+			PageSize="5"
+		    OnPageIndexChanged="RenderCallBack"
+		    Mode="Numeric"
+			ButtonType="LinkButton"/>
+		</tr>
+		<tr>
+								<a href="?page=IngresarArticulo"  onclick="return true" >Ingresar Articulo<!--<img src="assets/img/insertar1.gif" width="138" height="26" border="0" name="img5">--></a>
+			
+		</tr>
+	</table>
+	</div>
+
+	
+</com:TContent>

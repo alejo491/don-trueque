@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="13" y="3" width="904" height="593" text="www.dontrueque.com.co" measuredWidth="904" measuredHeight="593"/>
+  <widgets xsi:type="model:HLine" id="2" x="10" y="170" width="905" measuredWidth="905" measuredHeight="6"/>
+  <widgets xsi:type="model:VLine" id="3" x="131" y="175" height="428" measuredWidth="6" measuredHeight="428"/>
+  <widgets xsi:type="model:VLine" id="4" x="673" y="175" height="428" measuredWidth="6" measuredHeight="428"/>
+  <widgets xsi:type="model:Link" id="5" x="29" y="190" measuredWidth="3" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="106" y="27" text="dontrueque/principal" measuredWidth="118" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="13" x="690" y="190" width="209" height="133" text="Nombre Usuario" measuredWidth="209" measuredHeight="133">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="14" x="705" y="208" text="Editar Perfil" measuredWidth="63" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="15" x="705" y="230" text="Mis Articulos" measuredWidth="72" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="16" x="705" y="253" text="Solicitudes de Trueque" measuredWidth="123" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="17" x="706" y="287" text="Cerrar Sesion" measuredWidth="89" measuredHeight="25" link="../Principal/Principal_invitado.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Breadcrumbs" id="18" x="31" y="145" text="Inicio,Buscar,Detalles" measuredWidth="148" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="29" height="23" text="Inicio"/>
+    <items x="49" y="0" width="35" height="23" text="Buscar"/>
+    <items x="104" y="0" width="41" height="23" text="Detalles"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="19" x="13" y="140" width="905" measuredWidth="905" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="22" x="18" y="41" text="Label" measuredWidth="33" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="32" x="167" y="208" text="Solicitudes Pendientes:" measuredWidth="126" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="33" x="167" y="252" width="350" height="228" text="articulo, Solicitante,ver&#xA;carro,paola, &#xA;moto,Severin, &#xA;" measuredWidth="350" measuredHeight="228" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="34" x="456" y="271" text="[Ver]" measuredWidth="22" measuredHeight="23" link="DetallesSolicitud.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="35" x="456" y="292" text="[Ver]" measuredWidth="22" measuredHeight="23" link="DetallesSolicitud.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="42" x="31" y="212" text="Categorias" measuredWidth="63" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="43" x="31" y="230" text="Hogar" measuredWidth="36" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="44" x="31" y="252" text="Deportes" measuredWidth="50" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="45" x="31" y="275" text="Vehiculos" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="46" x="31" y="297" text="Niños" measuredWidth="34" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="47" x="31" y="319" text="Entretenimiento" measuredWidth="88" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="48" x="31" y="190" text="Inicio" measuredWidth="32" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

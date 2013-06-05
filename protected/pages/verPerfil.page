@@ -1,0 +1,39 @@
+
+<com:TContent ID="cphCuerpo">
+	<div align="center">
+	<h1><com:TLabel ID="lbl_name_user" Text=""/></h1>
+	<table>
+	
+		<tr>
+		  <td><strong><com:TLabel ID="lbl_nombre" Text="Nombre: "/></strong></td>
+		  <td><com:TLabel ID="lbl_txt_nombre" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><strong><com:TLabel ID="lbl_apellido" Text="Apellido: "/></strong></td>
+		<td><com:TLabel ID="lbl_txt_apellido" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><strong><com:TLabel ID="lbl_fecha" Text="Fecha Nacimiento: "/></strong></td>
+		<td><com:TLabel ID="lbl_txt_fecha" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><strong><com:TLabel ID="lbl_ubicacion" Text="Ubicacion: "/></strong></td>
+		<td><com:TLabel ID="lbl_txt_ubicacion" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><strong><com:TLabel ID="lbl_telefono" Text="Telefono: "/></strong></td>
+		<td><com:TLabel ID="lbl_txt_telefono" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><strong><com:TLabel ID="lbl_correo" Text="Correo Electronico: "/></strong></td>
+		<td><com:TLabel ID="lbl_txt_correo" Text=""/></br></td>
+		</tr>
+		
+	</table>
+	
+	
+	
+	</div>
+	
+	
+</com:TContent>
