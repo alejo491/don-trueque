@@ -83,18 +83,19 @@
 						$tabla->controls->add($row);
 						$this->cphCuerpo->controls->add($tabla);
 						
-					
+					/*
 						$b[$i]=$tabla;
 						$i=$i+1;
+						*/
 					
 						}
 						
 					}else{
 						$error="<h3>No se han encontrado articulos</h3>";
 						$this->cphCuerpo->controls->add($error);
-					}
+					}/*
 					$this->Resultados->DataSource=$b;
-					$this->Resultados->DataBind();
+					$this->Resultados->DataBind();*/
 				}
 				
 		}

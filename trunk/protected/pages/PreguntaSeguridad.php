@@ -21,12 +21,11 @@
 			
 			if( $usuario->RESPUESTA==$this->txt_Resp->Text){
 				
-				$url=$this->Service->constructUrl('RecuperacionExitosa',array('c'=>$usuario->PASS));
+				$url=$this->Service->constructUrl('RecuperacionExitosa',array('nick'=>$this->Request['nick']));
 				$this->Response->redirect($url);
 				}else{
-				
-					$url=$this->Service->constructUrl('RecuperarContrasena');
-					$this->Response->redirect($url);
+					
+					$this->error->Text="Respuesta incorrecta, por favor intentelo de nuevo.";
 				}
 		
 		

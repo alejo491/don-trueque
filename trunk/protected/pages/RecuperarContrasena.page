@@ -1,6 +1,6 @@
 <%@ MasterClass="templateregistro"%>
 <com:TContent ID="Cuerpo">
-	<com:TForm ID="form">
+	<com:TForm ID="form" Method="post">
 		<fieldset><legend><h3>Recuperacion de Contrase&ntilde;a</h3></legend>
 			<br /><p>Debe llenar los siguientes datos para la recuperacion de la contrase&ntilde;a</p>
 			<com:TLabel ID="lbl_NombreU" Text="Nombre de Usuario"/>
