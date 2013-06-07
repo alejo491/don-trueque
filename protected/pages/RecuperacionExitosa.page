@@ -2,11 +2,12 @@
 
 <com:TContent ID="Cuerpo">
 	<com:TForm ID="form">
-		<P>Su respuesta de Seguridad ha sido correcta</p>
-		<P>A continuacion esta su contrase&ntilde;a</p>
+		<P>Su respuesta de seguridad ha sido correcta</p>
+		Se ha enviado un correo a <strong><com:TLabel ID="correo" Text=""/></strong>
+		con la contrase&ntilde;a para que pueda iniciar sesion de nuevo
 		
-		<com:TLabel ID="contrasena" Text="Contrase&ntilde;a"/>
-		<h1><com:TLabel ID="txt_contr" Text=""/></h1><br/>
+		
+		<br/>
 		<com:TButton ID="btn_Inicio" Text="Volver al Inicio" OnClick="Inicio_click"/>
 	</com:TForm>
 

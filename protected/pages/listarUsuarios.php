@@ -11,6 +11,10 @@ class listarUsuarios extends TPage{
 
 	}
 	
+	function editar_click($sender,$param){
+	
+	}
+	
 	
 }
 
