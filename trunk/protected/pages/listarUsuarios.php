@@ -5,7 +5,7 @@ class listarUsuarios extends TPage{
 		parent::onInit($param);
 
 			
-			$this->ver->DataSource=$usuario=usuarioRecord::finder()->findAll();
+			$this->ver->DataSource=usuarioRecord::finder()->findAll();
 			$this->ver->DataBind();
 			
 
@@ -13,6 +13,18 @@ class listarUsuarios extends TPage{
 	
 	function editar_click($sender,$param){
 	
+	
+		$item=$param->Item;
+		$id=$this->ver->DataKeys[$item->ItemIndex];
+		$url=$this->Service->constructUrl('editarUsuarios',array('id'=>$id));
+		$this->Response->redirect($url);
+	}
+	
+	public function borrar_click($sender,$param){
+		$item=$param->Item;
+		$id=$this->ver->DataKeys[$item->ItemIndex];
+		$url=$this->Service->constructUrl('eliminarUsuarios',array('id'=>$id));
+		$this->Response->redirect($url);
 	}
 	
 	
