@@ -5,7 +5,7 @@
 			session_start();
 			$usuario=usuarioRecord::finder()->find("ID_USUARIO=?",$_SESSION['id']);
 			$this->findControl('nombre_administrador')->Text=$usuario->NICK;
-			$this->findControl('link1')->NavigateUrl="?page=editarPerfil";
+			
 			}
 		public function cerrar_sesion($param){
 				session_destroy();

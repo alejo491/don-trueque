@@ -1,6 +1,7 @@
 <%@ Masterclass="templateregistrado" %>
 
 <com:TContent ID="cphCuerpo">
+	<h2>¿Estas seguro de borrar este articulo?</h2>
 	<fieldset>
 	  <legend><strong>Articulo</strong></legend><br><br>
 	 <div align = "center">

@@ -1,23 +1,46 @@
 <%@ MasterClass="templateadministrador" %>
 
 <com:TContent ID="cphCuerpo">
-	<div align "center">
-		<div ID="txt_politicas" style="border : solid 2px #E0E0E0;
-						   padding : 4px;
-						   width : 500px;
-						   height : 800px;
-						   overflow : auto; ">
-		<table>
-	 
-		<com:TDataGrid ID="ver"
-		DataKeyField="ID_USUARIO"
-		AutoGenerateColumns="true"
-		>
+	<div align="center">
+	<h1><com:TLabel ID="lbl_name_user" Text=""/></h1>
+	<table>
+	
+		<tr>
+		  <td><com:TLabel ID="lbl_nombre" Text="Nombre: "/></td>
+		  <td><com:TTextBox ID="txt_nombre" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><com:TLabel ID="lbl_apellido" Text="Apellido: "/></td>
+		<td><com:TTextBox ID="txt_apellido" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><com:TLabel ID="lbl_fecha" Text="Fecha Nacimiento: "/></td>
+		<td><com:TTextBox ID="txt_fecha" Text=""/><com:TLabel ID="lbl_formato" Text=" (dd-mm-aaaa)"/></br></td>
+		</tr>
+		<tr>
+		<td><com:TLabel ID="lbl_ubicacion" Text="Ubicacion: "/></td>
+		<td><com:TTextBox ID="txt_ubicacion" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><com:TLabel ID="lbl_telefono" Text="Telefono: "/></td>
+		<td><com:TTextBox ID="txt_telefono" Text=""/></br></td>
+		</tr>
+		<tr>
+		<td><com:TLabel ID="lbl_correo" Text="Correo Electronico: "/></td>
+		<td><com:TTextBox ID="txt_correo" Text=""/></br></td>
+		</tr>
+		</br>
+		</br>
 		
-	  </com:TDataGrid>
-	 
-	 	</table>	
-	 	</div>
-	</div>	
+		
+	
+		
+	</table>
+	
+	
+	
+	
+	
+	</div>
 	
 </com:TContent>

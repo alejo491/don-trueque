@@ -35,16 +35,26 @@
 				</td>
 			</tr>
 			<tr>
+				<td>
+					<strong><com:TLabel ID="LblCiudad" Text="Ciudad: "/></strong><br><br>
+				</td>
+				<td>
+					<com:TDropDownList ID="list_ciudad" DataValueField="id" DataTextField="ciudad">
+						
+					</com:TDropDownList><br><br>
+				</td>
+			</tr>
+			<tr>
 				<td><strong><com:TLabel ID="LblCatego" Text="Categoria: "/></strong><br><br></td>
 				<td><com:TDropDownList ID="Productos">
 						<com:TListItem Text="Categoria" Value="null" />
-						<com:TListItem Text="Tecnologia" Value="Tecnologia" />
-						<com:TListItem Value="Vehiculos" Text="Vehiculos"/>
-						<com:TListItem Value="Electrodomesticos" Text="Electrodomesticos"/>
-						<com:TListItem Value="Juguetes" Text="Juguetes"/>
-						<com:TListItem Value="Libros" Text="Libros"/>
-						<com:TListItem Value="Peliculas" Text="Peliculas"/>
-						<com:TListItem Value="Videojuegos" Text="Videojuegos"/>
+						<com:TListItem Text="TECNOLOGIA" Value="TECNOLOGIA" />
+						<com:TListItem Value="VEHICULOS" Text="VEHICULOS"/>
+						<com:TListItem Value="ELECTRODOMESTICOS" Text="ELECTRODOMESTICOS"/>
+						<com:TListItem Value="JUGUETES" Text="JUGUETES"/>
+						<com:TListItem Value="LIBROS" Text="LIBROS"/>
+						<com:TListItem Value="PELICULAS" Text="PELICULAS"/>
+						<com:TListItem Value="VIDEOJUEGOS" Text="VIDEOJUEGOS"/>
 						</com:TDropDownList><br><br></td>
 			</tr>
 	  	</table>
