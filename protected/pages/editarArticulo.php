@@ -3,12 +3,16 @@
 		private $articulo;
 		public function onInit($param){
 			parent::onInit($param);
+			$this->list_ciudad->DataSource=ubicacionRecord::consultarCiudades();
+			$this->list_ciudad->DataBind();
 			$id=$this->Request['id'];
 			$this-> articulo=articuloRecord::finder()->findByPk($id);
 			$imagen=imagenRecord::finder()->findByPk($this->articulo->ID_IMAGEN);
 			$this->txtNombre->Text=$this->articulo->NOMBRE_PRODUCTO;
-			$this->TxtDesc->text=$this->articulo->DESCRIPCION;
-			$this->Productos->text=$this->articulo->CATEGORIA;
+			$this->TxtDesc->Text=$this->articulo->DESCRIPCION;
+			$this->list_ciudad->Text=$this->articulo->ID_UBICACION;
+			$this->Productos->Text=$this->articulo->CATEGORIA;
+			
 			$this->image->imageUrl=$imagen->RUTA_IMAGEN;
 		}
 		
@@ -30,7 +34,10 @@
 			$imagen->save();
 			$modificar->NOMBRE_PRODUCTO=$this->txtNombre->Text;
 			$modificar->DESCRIPCION=$this->TxtDesc->Text;
+			$modificar->ID_UBICACION=$this->list_ciudad->Text;
+			if($this->Productos->Text!="null"){
 			$modificar->CATEGORIA=$this->Productos->Text;
+			}
 			$modificar->save();
 			$url=$this->Service->constructUrl('articulos');
 			$this->Response->redirect($url);

@@ -1,7 +1,7 @@
 
 <com:TContent ID="cphCuerpo">
-	<div align="center">
-	<h1><com:TLabel ID="lbl_name_user" Text=""/></h1>
+	<div >
+	<h1><com:TLabel ID="lbl_name_user" Text=""/></h1></br>
 	<table>
 	
 		<tr>

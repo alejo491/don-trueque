@@ -45,9 +45,7 @@
 <table style="height: 109px; width: 233px;">
 <tbody>
 <tr>
-<td><com:THyperLink ID="link1"
-						NavigateUrl=""
-						Text="Editar Perfil"/></td>
+<td><a href="?page=editarPerfil&ms=templateregistrado">Editar Perfil</a><br /></td>
 </tr>
 <tr>
 <td><a href="?page=articulos">Mis Art&iacute;culos</a></td>

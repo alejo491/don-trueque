@@ -1,4 +1,4 @@
-<%@ MasterClass="templateregistrado"%>
+
 <com:TContent ID="cphCuerpo">
 
 <div align="center">
@@ -15,11 +15,13 @@
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_fecha" Text="Fecha Nacimiento: "/></td>
-		<td><com:TTextBox ID="txt_fecha" Text=""/><com:TLabel ID="lbl_formato" Text=" (dd-mm-aaaa)"/></br></td>
+		<td><com:TTextBox ID="txt_fecha" Text=""/><com:TLabel ID="lbl_formato" Text=" (aaaa-mm-dd)"/></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_ubicacion" Text="Ubicacion: "/></td>
-		<td><com:TTextBox ID="txt_ubicacion" Text=""/></br></td>
+		<td><com:TDropDownList ID="list_ciudad" DataValueField="id" DataTextField="ciudad">
+						
+					</com:TDropDownList></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_telefono" Text="Telefono: "/></td>
@@ -40,9 +42,7 @@
 	<com:TButton ID="btn_editar_perfil"
 		Text="Editar"
 		OnClick="editar_perfil_Clicked"/>
-	<com:TButton ID="btn_cancelar_perfil"
-		Text="Cancelar"
-		OnClick="cancelar_perfil_Clicked"/>
+	
 	
 	
 	</div>
