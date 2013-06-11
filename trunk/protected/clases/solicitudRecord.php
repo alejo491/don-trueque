@@ -12,6 +12,7 @@ class solicitudRecord extends TActiveRecord
 	public $USU_ID_USUARIO;
 	public $ART_ID_ARTICULO;
 	public $MENSAJE;
+	public $ESTADO;
 
 	public static function finder($className=__CLASS__)
 	{

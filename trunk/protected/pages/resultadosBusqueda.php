@@ -30,15 +30,15 @@
 										$condicion=$condicion."OR NOMBRE_PRODUCTO like '%".$vector[$i]."%'";
 										 
 										}
-										$articulo=articuloRecord::finder()->findAll($condicion);
+										$articulo=articuloRecord::finder()->findAll($condicion." AND DISPONIBILIDAD='Libre'");
 										
 									}else{
-										$articulo=articuloRecord::finder()->findAll("NOMBRE_PRODUCTO like '%".$vector[0]."%' ");
+										$articulo=articuloRecord::finder()->findAll("NOMBRE_PRODUCTO like '%".$vector[0]."%' AND DISPONIBILIDAD='Libre'");
 										}	
 						}else if($this->Request['tipo']=='categoria'){
 							//esto es para obtener la respuesta del post 
 							$busqueda=$this->Request['id'];
-								$articulo=articuloRecord::finder()->findAll('CATEGORIA=?',$busqueda);	
+								$articulo=articuloRecord::finder()->findAll("CATEGORIA=? AND DISPONIBILIDAD='Libre'",$busqueda);	
 						}else if($this->Request['tipo']=='ava'){
 							
 							$articulo=articuloRecord::finder()->findAll($this->Request['s']);
@@ -83,10 +83,7 @@
 						$tabla->controls->add($row);
 						$this->cphCuerpo->controls->add($tabla);
 						
-					/*
-						$b[$i]=$tabla;
-						$i=$i+1;
-						*/
+					
 					
 						}
 						

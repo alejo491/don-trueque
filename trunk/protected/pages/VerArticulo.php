@@ -7,24 +7,29 @@
 				}
 	
 			public function onInit($param){
-			if(!isset($_SESSION['id'])){
-				$this->btn_solicitud->Enabled="false";
-				$this->btn_solicitud->Visible="false";
+				if(!isset($_SESSION['id'])){
+					$this->btn_solicitud->Enabled="false";
+					$this->btn_solicitud->Visible="false";
+				}
+				$var=$this->Request['id'];
+				$articulo=articuloRecord::finder()->findByPk($var);
+				$Img=imagenRecord::finder()->find("ID_IMAGEN=?",$articulo->ID_IMAGEN);
+				$Ubicacion=ubicacionRecord::finder()->find("ID_UBICACION=?",$articulo->ID_UBICACION);
+				
+				$this->Lbl_Nombre->Text=$articulo->NOMBRE_PRODUCTO;
+				$this->Lbl_Ubicacion->Text=utf8_encode($Ubicacion->CIUDAD);
+				$this->Lbl_Categoria->Text=$articulo->CATEGORIA;
+				$this->Lbl_Descripcion->Text=$articulo->DESCRIPCION;
+				
+				$this->image->imageUrl=$Img->RUTA_IMAGEN;
+			
 			}
-			$var=$this->Request['id'];
-			$Nombre=articuloRecord::finder()->findByPk($var);
-			$Img=imagenRecord::finder()->find("ID_IMAGEN=?",$Nombre->ID_IMAGEN);
-			$Ubicacion=ubicacionRecord::finder()->find("ID_UBICACION=?",$Nombre->ID_UBICACION);
 			
-			$this->Lbl_Nombre->Text=$Nombre->NOMBRE_PRODUCTO;
-			$this->Lbl_Ubicacion->Text=utf8_encode($Ubicacion->CIUDAD);
-			$this->Lbl_Categoria->Text=$Nombre->CATEGORIA;
-			$this->Lbl_Descripcion->Text=$Nombre->DESCRIPCION;
-			
-			$this->image->imageUrl=$Img->RUTA_IMAGEN;
-			
+			public function Hacer_propuesta($sender,$param){
+				$url=$this->Service->constructUrl('seleccionarProducto',array('id'=>$this->Request['id'],'ms'=>$this->Request['ms']));
+				$this->Response->redirect($url);
+				
 			}
-			
 			
 		
 	}
