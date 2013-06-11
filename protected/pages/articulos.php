@@ -3,7 +3,7 @@ class articulos extends Tpage{
 	public function onInit($param){
 		parent::onInit($param);
 		
-		$this->listaarticulo->DataSource=articuloRecord::finder()->findAll("ID_USUARIO=?",$_SESSION['id']);
+		$this->listaarticulo->DataSource=articuloRecord::finder()->findAll("ID_USUARIO=? AND DISPONIBILIDAD='Libre'",$_SESSION['id']);
 		$this->listaarticulo->DataBind();
 	}
 	

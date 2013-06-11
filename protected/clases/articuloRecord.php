@@ -14,6 +14,7 @@ class articuloRecord extends TActiveRecord
 	public $CATEGORIA;
 	public $DESCRIPCION;
 	public $FECHA_PUBLICACION;
+	public $DISPONIBILIDAD;
 
 	public static function finder($className=__CLASS__)
 	{

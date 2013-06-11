@@ -39,6 +39,7 @@ class busquedaAvanzada extends Tpage{
 		$condicion=$condicion." AND ".$condiciones[1];
 		$condicion=$condicion." AND ".$condiciones[2];
 		$condicion=$condicion." AND ".$condiciones[3];
+		$condicion=$condicion." AND DISPONIBILIDAD='Libre'";
 		
 		
 		

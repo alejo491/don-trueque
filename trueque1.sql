@@ -24,6 +24,7 @@ create table ARTICULO
    CATEGORIA            varchar(20),
    DESCRIPCION          varchar(200),
    FECHA_PUBLICACION    date,
+   DISPONIBILIDAD       varchar(20) default 'Libre',
    primary key (ID_ARTICULO)
 );
 
@@ -38,7 +39,7 @@ create table SOLICITUD
    USU_ID_USUARIO       int,
    ART_ID_ARTICULO      int not null,
    MENSAJE              varchar(200),
-   ESTADO               varchar(20),
+   ESTADO               varchar(20) default 'progreso',
    primary key (ID_SOLICITUD)
 );
 

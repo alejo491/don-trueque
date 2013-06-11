@@ -51,12 +51,7 @@
 						
 						
 			</com:TDataGrid>
-			<com:TPager ID="pager"
-		    ControlToPaginate="listaarticulo"
-			PageSize="5"
-		    OnPageIndexChanged="RenderCallBack"
-		    Mode="Numeric"
-			ButtonType="LinkButton"/>
+			
 		</tr>
 		<tr>
 								<a href="?page=IngresarArticulo"  onclick="return true" >Ingresar Articulo<!--<img src="assets/img/insertar1.gif" width="138" height="26" border="0" name="img5">--></a>
