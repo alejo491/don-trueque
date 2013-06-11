@@ -1,0 +1,23 @@
+<%@ MasterClass="templateadministrador" %>
+
+<com:TContent ID="cphCuerpo">
+	<div align "center">
+		<div ID="txt_politicas" style="border : solid 2px #E0E0E0;
+						   padding : 4px;
+						   width : 500px;
+						   height : 800px;
+						   overflow : auto; ">
+		<table>
+	 
+		<com:TDataGrid ID="ver"
+		DataKeyField="ID_USUARIO"
+		AutoGenerateColumns="true"
+		>
+		
+	  </com:TDataGrid>
+	 
+	 	</table>	
+	 	</div>
+	</div>	
+	
+</com:TContent>
