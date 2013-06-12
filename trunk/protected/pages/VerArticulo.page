@@ -6,7 +6,7 @@
 		<table>
 			<tr>
 				<td>
-					<com:TImage ID="image" ImageUrl="" Width="300px" AlternateText=""/>
+					<com:TImage ID="image" ImageUrl="" Width="200px" AlternateText=""/>
 				</td>
 				<td>
 					
@@ -22,6 +22,7 @@
 					<com:TButton ID="btn_solicitud"
 						Text="Hacer Propuesta"
 						OnClick="Hacer_propuesta"/>
+					<h1><com:TLabel ID="error" Text=""/></h1>
 					
 				</td>
 			</tr>
