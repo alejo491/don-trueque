@@ -23,7 +23,7 @@ class listarUsuarios extends TPage{
 	public function borrar_click($sender,$param){
 		$item=$param->Item;
 		$id=$this->ver->DataKeys[$item->ItemIndex];
-		$url=$this->Service->constructUrl('eliminarUsuarios',array('id'=>$id));
+		$url=$this->Service->constructUrl('eliminarUsuario',array('id'=>$id));
 		$this->Response->redirect($url);
 	}
 	
