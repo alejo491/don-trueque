@@ -1,0 +1,46 @@
+<%@ Masterclass="templateregistrado" %>
+
+<com:TContent ID="cphCuerpo">
+	<h2>¿Estas seguro de borrar este articulo?</h2>
+	<fieldset>
+	  <legend><strong>Articulo</strong></legend><br><br>
+	 <div align = "center">
+	  <table>
+		
+	
+		<tr>
+			<td></td><td><com:TImage ID="image"
+			ImageUrl="" 
+			Width="300px"
+			AlternateText=""/><br><br></td>
+		</tr>
+		
+		<tr>
+			<td><strong><com:TLabel ID="LblNombre" Text="Nombre: "/></strong><br><br></td>
+			<td><com:TLabel ID="txtNombre" Text=""/><br><br></td>
+		</tr>
+		<tr>
+			<td><strong><com:TLabel ID="LblDesc" Text="Descripción: "/></strong><br><br></td>
+			<td><com:TLabel ID="TxtDesc" Text="label"/>
+				
+			<br><br></td>
+		</tr>
+		<tr>
+			<td><strong><com:TLabel ID="LblCatego" Text="Categoria: "/></strong><br><br></td>
+			<td><com:TLabel ID="lbl_cat" Text="label"/><br><br></td>
+		</tr>
+		<tr>
+			<td><strong><com:TLabel ID="Lblfecha" Text="Fecha de Publicacion: "/></strong><br><br></td>
+			<td><com:TLabel ID="lbl_fec" Text="label"/><br><br></td>
+		</tr>
+		
+	  </table>
+	 </div>
+	 
+	 <div align = "center"> 
+		<com:TButton ID="btn_subir" Text="Eliminar Articulo" OnClick="btn_eliminar_click" />		    
+	 </div>
+	</fieldset>	
+	
+  
+   </com:TContent>   
