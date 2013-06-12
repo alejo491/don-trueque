@@ -1,0 +1,56 @@
+<%@ MasterClass="templateadministrador" %>
+
+<com:TContent ID="cphCuerpo">
+	<div align "center">
+		<div >
+		<table>
+	 
+		<com:TDataGrid ID="ver"
+			DataKeyField="ID_ARTICULO"
+			
+			
+			AutoGenerateColumns="false"
+			OnEditCommand="editar_click" 
+			OnDeleteCommand="borrar_click"
+			ItemStyle.BackColor="#BFCFFF"
+			PageSize="5"
+			AlternatingItemStyle.BackColor="#E6ECFF"
+			HeaderStyle.BackColor="#BDBDBD"
+			HeaderStyle.ForeColor="BLACK"
+		>
+		
+		<com:TBoundColumn ID="column1"
+			HeaderText="ID ARTICULO"
+			DataField="ID_ARTICULO"/>
+			
+		<com:TBoundColumn ID="column2"
+			HeaderText="NOMBRE ARTICULO"
+			DataField="NOMBRE_PRODUCTO"/>
+		
+		<com:TBoundColumn ID="column4"
+			HeaderText="ID USUARIO"
+			DataField="ID_ARTICULO"/>
+			
+		<com:TButtonColumn
+			HeaderText="Editar"
+			Text="Editar"
+			ImageUrl="assets/images/editar.png"
+			ButtonType="ImageButton"
+			CommandName="edit" />
+		<com:TButtonColumn
+			HeaderText="Borrar"
+			Text="Borrar"
+			ImageUrl="assets/images/borrar.png"
+			ButtonType="ImageButton"
+			CommandName="delete" />	
+		
+		
+		</com:TDataGrid>
+			
+			
+	 
+		</table>	
+		</div>
+	</div>	
+	
+</com:TContent>

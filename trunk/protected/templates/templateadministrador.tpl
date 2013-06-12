@@ -46,7 +46,7 @@
 				<fieldset><legend><com:TLabel ID="lb" Text="Administrador "/><com:TLabel ID="nombre_administrador" Text=""/></legend>
 					<a href="?page=editarPerfil&ms=templateadministrador">Editar Perfil</a><br />
 					<a href="?page=listarUsuarios" >Ver Usuarios</a><br />
-					<a href="" >Administrar Articulos</a><br />
+					<a href="?page=administrarArticulos" >Administrar Articulos</a><br />
 					<a href="" >Ver Estadisticas</a><br />
 				</fieldset><br />
 				
