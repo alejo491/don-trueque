@@ -14,7 +14,7 @@
 							<strong><com:TLabel ID="Nombre" Text="Nombre:"/></strong>
 							<com:TLabel ID="Lbl_Nombre" Text=""/><br />
 							<strong><com:TLabel ID="Ubicacion" Text="Ubicaci&oacute;n:"/></strong>
-							<com:TLabel ID="Lbl_Ubicacion"" Text=""/><br />
+							<com:TLabel ID="Lbl_Ubicacion" Text=""/><br />
 							<strong><com:TLabel ID="Descripcion" Text="Descripci&oacute;n:"/></strong>
 							<com:TLabel ID="Lbl_Descripcion" Text=""/><br />
 							<strong><com:TLabel ID="Categoria" Text="Categoria:"/></strong>

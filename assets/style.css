@@ -109,12 +109,12 @@ ul {
 #box3 {
 	width: 236px;
 	overflow: hidden;
-	margin: 0px 0 0 260px;
+	margin: 0px 0px 0px 260px;
 }
 
 #content {
 	width: 555px;
-	margin: 0px 28px 0 250px;
+	margin: 0px 28px 0px 250px;
 	padding: 28px;
 	background: #ffffff;
 	border-bottom: solid 1px #c0c0c0;
@@ -327,6 +327,18 @@ ul {
 #sidebar1 ul li.first {
 	padding-top: 0;
 	border-top: 0;
+}
+#art1{
+ width:300px;
+ float:left;
+ 
+}
+
+
+#art2{
+
+float:right;
+width:200px;
 }
 
 #sidebar2 {

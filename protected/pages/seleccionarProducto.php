@@ -17,7 +17,7 @@
 			$this->Lbl_Nombre->Text=$a->NOMBRE_PRODUCTO;
 			$this->Lbl_Ubicacion->Text=utf8_encode(ubicacionRecord::finder()->findByPk($a->ID_UBICACION)->CIUDAD);
 			$this->Lbl_Categoria->Text=$a->CATEGORIA;
-			$this->Lbl_Descripcion->Text=$a->DESCRIPCION;
+			$this->Lbl_Descripcion->Text=utf8_encode($a->DESCRIPCION);
 			
 			$this->Articulos_usuario($param);
 			}
@@ -32,7 +32,7 @@
 						
 						
 			
-						echo($i->ID_IMAGEN);
+						
 						
 						$ubicacion=ubicacionRecord::finder()->find("ID_UBICACION=?",$i->ID_UBICACION);
 						
