@@ -15,8 +15,8 @@
 		ItemStyle.BackColor="#BFCFFF"
 		PageSize="5"
 		AlternatingItemStyle.BackColor="#E6ECFF"
-		HeaderStyle.BackColor="white"
-		HeaderStyle.ForeColor="5a5389"
+		HeaderStyle.BackColor="#BDBDBD"
+		HeaderStyle.ForeColor="BLACK"
 		>
 		
 		<com:TBoundColumn ID="column1"
@@ -34,25 +34,22 @@
 			HeaderText="TIPO"
 			DataField="tipo"/>
 		<com:TButtonColumn
-			HeaderText="Accion"
+			HeaderText="Editar"
 			Text="Editar"
-			ButtonType="PushButton"
+			ImageUrl="assets/images/editar.png"
+			ButtonType="ImageButton"
 			CommandName="edit" />
 		<com:TButtonColumn
-			HeaderText="Accion"
+			HeaderText="Borrar"
 			Text="Borrar"
-			ButtonType="PushButton"
+			ImageUrl="assets/images/borrar.png"
+			ButtonType="ImageButton"
 			CommandName="delete" />	
 		
 		
 	    </com:TDataGrid>
 			
-			<com:TPager ID="pager"
-			ControlToPaginate="ver"
 			
-			OnPageIndexChanged="PageChanged"
-			Mode="Numeric"
-			ButtonType="LinkButton"/>
 	 
 	 	</table>	
 	 	</div>

@@ -16,8 +16,9 @@
 				OnDeleteCommand="borrar_articulo"
 				ItemStyle.BackColor="#BFCFFF"
 				AlternatingItemStyle.BackColor="#E6ECFF"
-				HeaderStyle.BackColor="white"
-				HeaderStyle.ForeColor="5a5389"
+				HeaderStyle.BackColor="#BDBDBD"
+				HeaderStyle.ForeColor="BLACK"
+				
 				>
 				
 				
@@ -39,14 +40,16 @@
 							HeaderText="Fecha Publicacion"
 							DataField="FECHA_PUBLICACION"/>
 						<com:TButtonColumn
-							HeaderText="Accion"
+							HeaderText="Editar"
 							Text="Editar"
-							ButtonType="PushButton"
+							ImageUrl="assets/images/editar.png"
+							ButtonType="ImageButton"
 							CommandName="edit" />
 						<com:TButtonColumn
-							HeaderText="Accion"
+							HeaderText="Borrar"
 							Text="Borrar"
-							ButtonType="PushButton"
+							ImageUrl="assets/images/borrar.png"
+							ButtonType="ImageButton"
 							CommandName="delete" />
 						
 						
