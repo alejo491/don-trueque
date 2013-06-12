@@ -1,0 +1,47 @@
+<%@ Masterclass="templateregistrado" %>
+
+<com:TContent ID="cphCuerpo">
+	<h2>¿Estas seguro de borrar este Usuario?</h2>
+	<fieldset>
+	  <legend><strong>Usuario</strong></legend><br><br>
+	 <div align = "center">
+	  <table>
+		
+		
+		<tr>
+			<td><strong><com:TLabel ID="LblNombre" Text="Nombre: "/></strong><br><br></td>
+			<td><com:TLabel ID="txtNombre" Text=""/>
+			<br><br></td>
+		</tr>
+		<tr>
+			<td><strong><com:TLabel ID="LblApell" Text="Apellido: "/></strong><br><br></td>
+			<td><com:TLabel ID="txtApell" Text="label"/>	
+			<br><br></td>
+		</tr>
+		<tr>
+			<td><strong><com:TLabel ID="LblFechaNac" Text="Fecha de Nacimiento: "/></strong><br><br></td>
+			<td><com:TLabel ID="txtFecN" Text="label"/>
+			<br><br></td>
+		</tr>
+		<tr>
+			<td><strong><com:TLabel ID="LblTel" Text="Telefono: "/></strong><br><br></td>
+			<td><com:TLabel ID="txtTel" Text="label"/>
+			<br><br></td>
+		</tr>
+		<tr>
+			<td><strong><com:TLabel ID="Lblcorreo" Text="Correo: "/></strong><br><br></td>
+			<td><com:TLabel ID="txtCorreo" Text="label"/>
+			<br><br></td>
+		</tr>
+
+		
+	  </table>
+	 </div>
+	 
+	 <div align = "center"> 
+		<com:TButton ID="btn_subir" Text="Eliminar Usuario" OnClick="btn_eliminar_click" />		    
+	 </div>
+	</fieldset>	
+	
+  
+   </com:TContent>   
