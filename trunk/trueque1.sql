@@ -39,6 +39,7 @@ create table SOLICITUD
    USU_ID_USUARIO       int,
    ART_ID_ARTICULO      int not null,
    MENSAJE              varchar(200),
+   FECHA_RESPUESTA      date default null,
    ESTADO               varchar(20) default 'progreso',
    primary key (ID_SOLICITUD)
 );
