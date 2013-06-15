@@ -7,8 +7,6 @@ class solicitudes extends TPage{
 			
 			$this->CargarDatos($param);
 			
-			
-
 	}
 	public function CargarDatos($param){
 		foreach($this->ObtenerDatos($param) as $i){

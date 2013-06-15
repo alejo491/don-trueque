@@ -1,0 +1,72 @@
+<%@ MasterClass="templateregistrado" %>
+<com:TContent ID="cphCuerpo">
+		 <div>
+			<div id="art1" align="center">
+			<table>
+				<tr>
+					<td>
+					<h2>Requieren este producto</h2><br />
+					<com:TImage ID="img_ar1" ImageUrl="" Width="100px" AlternateText=""/>
+					</td>
+					<td>
+					<br /><br /><com:TImage ID="flecha" ImageUrl="assets/images/flecha.gif" Width="100px" AlternateText=""/>
+					</td>
+				</tr>
+				<tr>
+				<td>
+					<strong><com:TLabel ID="Nombre" Text="Nombre:"/></strong><br />
+							<com:TLabel ID="Lbl_Nombre1" Text=""/><br />
+							<strong><com:TLabel ID="Ubicacion" Text="Ubicaci&oacute;n:"/></strong><br />
+							<com:TLabel ID="Lbl_Ubicacion1" Text=""/><br />
+							<strong><com:TLabel ID="Descripcion" Text="Descripci&oacute;n:"/></strong><br />
+							<com:TLabel ID="Lbl_Descripcion1" Text=""/><br />
+							<strong><com:TLabel ID="Categoria" Text="Categoria:"/></strong><br />
+							<com:TLabel ID="Lbl_Categoria1" Text=""/><br /><br />
+				</td>
+				</tr>
+			</table>
+			
+			</div>
+			<div id="art2" align="left">
+			<table>
+				<tr>
+					<td>
+						<h2>Te ofrecen este producto</h2><br />
+						<com:TImage ID="img_ar2" ImageUrl="" Width="100px" AlternateText=""/>
+					</td>
+				</tr>
+				<tr>
+				<td>
+					<strong>
+						<com:TLabel ID="Nombre2" Text="Nombre:"/></strong><br />
+						<com:TLabel ID="Lbl_Nombre2" Text=""/><br />
+						<strong><com:TLabel ID="Ubicacion2" Text="Ubicaci&oacute;n:"/></strong><br />
+						<com:TLabel ID="Lbl_Ubicacion2" Text=""/><br />
+						<strong><com:TLabel ID="Descripcion2" Text="Descripci&oacute;n:"/></strong><br />
+						<com:TLabel ID="Lbl_Descripcion2" Text=""/><br />
+						<strong><com:TLabel ID="Categoria2s" Text="Categoria:"/></strong><br />
+						<com:TLabel ID="Lbl_Categoria2" Text=""/><br /><br />
+				</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		
+	<table>
+		<tr>
+			<td>
+				<com:TButton ID="btn_Aceptar"
+					Text="Aceptar la Solicitud"
+					OnClick="Aceptar_Clicked"/>
+			
+			</td>
+			<td>
+				<com:TButton ID="btn_Cancelar"
+					Text="Rechazar la Solicitud"
+					OnClick="Cancelar_Clicked"/>
+			</td>
+		</tr>
+	</table>
+	
+			
+</com:TContent>
