@@ -47,7 +47,7 @@
 					<a href="?page=editarPerfil&ms=templateadministrador">Editar Perfil</a><br />
 					<a href="?page=listarUsuarios" >Ver Usuarios</a><br />
 					<a href="?page=administrarArticulos" >Administrar Articulos</a><br />
-					<a href="" >Ver Estadisticas</a><br />
+					<a href="?page=Estadisticas" >Ver Estadisticas</a><br />
 				</fieldset><br />
 				
 				<com:TButton ID="button" Text="Cerrar Sesion" OnClick="cerrar_sesion"/>

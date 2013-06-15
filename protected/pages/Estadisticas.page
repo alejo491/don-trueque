@@ -1,0 +1,100 @@
+<%@ Masterclass="templateregistrado" %>
+
+<com:TContent ID="cphCuerpo">
+
+	<h1 align ="center">ESTADISTICAS</h1><br />
+	<h2>Consulta Permutas</h2>
+	
+	<table>
+		<tr>
+				<td>
+				<com:TLabel ID="lblfecdesde" Text="Desde: "/>      
+				</td>
+				<td>                        
+				<com:TDatePicker ID="datedesde"
+					DateFormat="yyyy-MM-dd"
+					Mode="ImageButton"
+					InputMode="DropDownList"/>												   
+				</td>							
+		</tr>	
+			
+				<tr>
+					<td>
+					<com:TLabel ID="lblfechasta" Text="Hasta: "/>
+					</td>
+					<td>
+					<com:TDatePicker ID="datehasta"
+						DateFormat="yyyy-MM-dd"
+						Mode="ImageButton"
+						InputMode="DropDownList"/>
+					</td>
+				</tr>
+		
+		<tr>
+			<td>
+			<com:TRadioButton ID="radio1" GroupName="tipo" Text="Grafico de barras"/><br />
+			<com:TRadioButton ID="radio2" GroupName="tipo" Text="Grafico en pastel"/>
+			</td>
+			<td>
+				 <com:TImage ID="imgPermuta"
+				 	ImageUrl="" 
+				 	AlternateText="text"/>
+			</td>
+			<td>
+			<com:TButton ID="btnconpermu"
+				Width = "130px"
+				Text="Consultar Permuta"
+				OnClick="button_Clicked"/>
+			</td>
+		</tr>
+		
+		</table>
+		<br/>
+	<h2>Otras Consultas</h2>
+	<table>
+	<tr>
+				<td>
+				<com:TLabel ID="lblfecdesd" Text="Desde: "/>      
+				</td>
+				<td>                        
+				<com:TDatePicker ID="datedesd"
+					DateFormat="yyyy-MM-dd"
+					Mode="ImageButton"
+					InputMode="DropDownList"/>												   
+				</td>							
+		</tr>	
+			
+				<tr>
+					<td>
+					<com:TLabel ID="lblfechast" Text="Hasta: "/>
+					</td>
+					<td>
+					<com:TDatePicker ID="datehast"
+						DateFormat="yyyy-MM-dd"
+						Mode="ImageButton"
+						InputMode="DropDownList"/>
+					</td>
+		</tr>
+		<tr>
+			<td>
+			<com:TRadioButton ID="radio11" GroupName="tipo" Text="Grafico de barras"/><br />
+			<com:TRadioButton ID="radio22" GroupName="tipo" Text="Grafico en pastel"/>
+			</td>
+			<td>
+				 <com:TImage ID="ver"
+					ImageUrl="" 
+					AlternateText="text"/>
+			</td>
+			<td>
+			<com:TButton ID="btnver"
+				Width = "130px"
+				Text="Ver"
+				OnClick="button_Clicked"/>
+			</td>
+		</tr>
+		
+	
+
+	</table>
+
+</com:TContent>
