@@ -1,6 +1,7 @@
 <%@ MasterClass="templateregistrado" %>
 
 <com:TContent ID="cphCuerpo">
+	<com:TTable ID="verDatos" />
 	<div align "center">
 		<div >
 		<table>

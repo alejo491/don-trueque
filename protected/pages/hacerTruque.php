@@ -10,6 +10,7 @@ class hacerTruque extends Tpage{
 		}
 		
 		public function onInit($param){
+			parent::onInit($param);
 			$this->a=articuloRecord::finder()->findByPk($this->Request['id']);
 		    $this->pro->Text=usuarioRecord::finder()->findByPk($this->a->ID_USUARIO)->NICK;
 			$this->img_ar1->ImageUrl=imagenRecord::finder()->findByPk($this->a->ID_IMAGEN)->RUTA_IMAGEN;
@@ -28,7 +29,17 @@ class hacerTruque extends Tpage{
 			
 			
 		}
-		//Propuesta_Click
+		public function Propuesta_Click ($sender,$param){
+			$u=new solicitudRecord();
+			$u->ID_USUARIO=$this->b->ID_USUARIO;
+			$u->ID_ARTICULO=$this->b->ID_ARTICULO;
+			$u->USU_ID_USUARIO=$this->a->ID_USUARIO;
+			$u->ART_ID_ARTICULO=$this->a->ID_ARTICULO;
+			$u->MENSAJE=$this->mensaje->Text;
+			$u->save();
+			$url=$this->Service->constructUrl('envioExitoso',array('ms'=>$this->Request['ms']));
+			$this->Response->redirect($url);
+		}
 }
 
 ?>
