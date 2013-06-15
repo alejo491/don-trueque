@@ -1,0 +1,73 @@
+<%@ MasterClass="templateregistrado"%>
+
+<com:TContent ID="cphCuerpo">
+
+<table>
+	<tr>
+		<td>
+			<h1>
+				Datos de Confirmacion
+			</h1>
+		</td>
+	</tr>
+	<tr>
+		<td></br>
+			<b><com:TLabel ID="nombre" Text="Nombre"/></b>
+		</td>
+		<td>
+			<com:TLabel ID="lblNombre" Text=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="apellidos" Text="Apellidos"/></b>
+		</td>
+		<td>
+			<com:TLabel ID="lblApellidos" Text=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="cedula" Text="Cedula"/></b>
+		</td>
+		<td>
+			<com:TLabel ID="lblCedula" Text=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="numeroTarjeta" Text="Numero de la Tarjeta de Credito"/></b>
+		</td>
+		<td>
+			<com:TLabel ID="lblNumero" Text=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="contrasena" Text="Contrasena"/></b>
+		</td>
+		<td>
+			<com:TLabel ID="lblContrasena" Text=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="valor" Text="Valor de la Donacion"/></b>
+		</td>
+		<td>
+			<com:TLabel ID="lblValor" Text=""/>
+		</td>
+	</tr>
+	<tr>
+		<td align="middle"><br/><br/>
+		
+			<com:TButton ID="btn_Aceptar"
+				Text="Aceptar"
+				OnClick="Aceptar_Clicked"/>
+		
+	</tr>
+</table>
+	
+
+
+</com:TContent>

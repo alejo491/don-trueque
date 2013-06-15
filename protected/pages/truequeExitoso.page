@@ -6,22 +6,23 @@
 	<tr>
 		<td>
 			<h2>El trueque se ha realizado satisfactoriamente</h2>
+			</br>
 		</td>
 	</tr>
 	<tr>
-			<td align="middle">
-				<h2>Desea realizar una donacion?</h2>
-			</td>
+		<td align="middle">
+			<h2>Desea realizar una donacion?</h2>
+		</td>
 	</tr>
 	<tr>
 		<td>
 			<com:TButton ID="btn_Aceptar"
-			Text="button"
+			Text="Aceptar"
 			OnClick="Aceptar_Clicked"/>
 		</td>
 		<td>
 			<com:TButton ID="btn_Cancelar"
-			Text="button"
+			Text="Rechazar"
 			OnClick="Cancelar_Clicked"/>
 		</td>
 		

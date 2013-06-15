@@ -1,0 +1,94 @@
+<%@ MasterClass="templateregistrado"%>
+
+<com:TContent ID="cphCuerpo">
+
+
+<table>
+	<tr>
+		<td>
+			<b><com:TLabel ID="nombre" Text="Nombre"/></b>
+		</td>
+		<td>
+			<com:TTextBox ID="txtNombre" Text=""/>
+			
+			<com:TRequiredFieldValidator ID="val1"
+				ControlToValidate="txtNombre"
+				ErrorMessage="Debe ingresar su nombre"
+				Display="Dynamic"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="apellidos" Text="Apellidos"/></b>
+		</td>
+		<td>
+			<com:TTextBox ID="txtApell" Text=""/>
+			
+			<com:TRequiredFieldValidator ID="val2"
+				ControlToValidate="txtApell"
+				ErrorMessage="Debe ingresar sus Apellidos"
+				Display="Dynamic"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="cedula" Text="Cedula"/></b>
+		</td>
+		<td>
+			<com:TTextBox ID="txtCedula" Text=""/>
+			<com:TRequiredFieldValidator ID="val3"
+				ControlToValidate="txtCedula"
+				ErrorMessage="Debe ingresar su Cedula"
+				Display="Dynamic"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="numeroTarjeta1" Text="Numero de la Tarjeta de Credito"/><b>
+		</td>
+		<td>
+			<com:TTextBox ID="txtNumero" Text=""/>
+			
+			<com:TRequiredFieldValidator ID="val4"
+				ControlToValidate="txtNumero"
+				ErrorMessage="Debe ingresar el numero de la tarjeta de credito"
+				Display="Dynamic"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="contrasena" Text="Contrasena"/></b>
+		</td>
+		<td>
+			<com:TTextBox ID="txtCont" Text=""/>
+			
+			<com:TRequiredFieldValidator ID="val5"
+				ControlToValidate="txtCont"
+				ErrorMessage="Debe ingresar la contrase&ntilde;a"
+				Display="Dynamic"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b><com:TLabel ID="valor" Text="Valor de la Donacion"/></b>
+		</td>
+		<td>
+			<com:TTextBox ID="txtValor" Text=""/>
+			
+			<com:TRequiredFieldValidator ID="val6"
+				ControlToValidate="txtValor"
+				ErrorMessage="Debe ingresar la contrase&ntilde;a"
+				Display="Dynamic"/>
+		</td>
+	</tr>
+	<tr>
+		<b><td align="middle"><br/><br/>
+			<com:TButton ID="aceptarDonacion"
+			Text="Realizar Donacion"
+			OnClick="Aceptar_Clicked"/>
+		</td></b>
+		
+	</tr>
+</table>
+
+</com:TContent>
