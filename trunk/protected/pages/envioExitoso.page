@@ -1,0 +1,18 @@
+<com:TContent ID="cphCuerpo">
+
+<h1>Envio Exitoso</h1><br />
+
+Tu solicitud de trueque ha sido enviada satisfactoriamente.<br />
+Si el propietario del articulo que deseas, acepta la propuesta recibiras
+un correo con su informacion de contacto
+
+<h2>Desea realizar una donacion?</h2>
+
+<com:TButton ID="btn_Aceptar"
+			Text="Aceptar"
+			OnClick="Aceptar_Clicked"/>
+<com:TButton ID="btn_Cancelar"
+			Text="Rechazar"
+			OnClick="Cancelar_Clicked"/>
+</com:TContent>
+
