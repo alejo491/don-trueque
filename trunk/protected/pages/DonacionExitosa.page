@@ -1,0 +1,7 @@
+<%@ MasterClass="templateregistrado"%>
+
+<com:TContent ID="cphCuerpo">
+
+	<h3>Donacion Exitosa</h3></br>
+	
+</com:TContent>
