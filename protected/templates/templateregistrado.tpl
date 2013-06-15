@@ -51,7 +51,7 @@
 <td><a href="?page=articulos">Mis Art&iacute;culos</a></td>
 </tr>
 <tr>
-<td><a href ""> Mis Solicitudes de Trueque</a></td>
+<td><a href="?page=solicitudes&ms=templateregistrado"> Mis Solicitudes de Trueque</a></td>
 </tr>
 
 <tr>
