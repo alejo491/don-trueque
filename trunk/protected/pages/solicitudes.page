@@ -1,0 +1,61 @@
+<%@ MasterClass="templateregistrado" %>
+
+<com:TContent ID="cphCuerpo">
+	<div align "center">
+		<div >
+		<table>
+	 
+		<com:TDataGrid ID="versolicitudes"
+			DataKeyField="ID_SOLICITUD"
+			
+			
+			AutoGenerateColumns=""
+			OnEditCommand="aceptar_click" 
+			OnDeleteCommand="rechazar_click"
+			ItemStyle.BackColor="#BFCFFF"
+			
+			AlternatingItemStyle.BackColor="#E6ECFF"
+			HeaderStyle.BackColor="#BDBDBD"
+			HeaderStyle.ForeColor="BLACK"
+		>
+		
+		<com:TBoundColumn ID="column0"
+			HeaderText="ENVIADO POR"
+			DataField="ID_USUARIO"/>
+		
+		<com:TBoundColumn ID="column2"
+			HeaderText="que ofrece"
+			DataField="ID_ARTICULO"/>
+			
+		<com:TBoundColumn ID="column5"
+			HeaderText="que articulo necesita"
+			DataField="ART_ID_ARTICULO"/>
+			
+		<com:TBoundColumn ID="column4"
+			HeaderText="MENSAJE"
+			DataField="MENSAJE"/>
+
+			
+		<com:TButtonColumn
+			HeaderText="Aceptar"
+			Text="Aceptar"
+			ImageUrl="assets/images/editar.png"
+			ButtonType="ImageButton"
+			CommandName="edit" />
+		<com:TButtonColumn
+			HeaderText="Rechazar"
+			Text="Rechazar"
+			ImageUrl="assets/images/borrar.png"
+			ButtonType="ImageButton"
+			CommandName="delete" />	
+		
+		
+		</com:TDataGrid>
+			
+			
+	 
+		</table>	
+		</div>
+	</div>	
+	
+</com:TContent>
