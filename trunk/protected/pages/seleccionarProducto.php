@@ -11,7 +11,7 @@
 		public function onInit($param){
 			
 			
-			$a=articuloRecord::finder()->findByPk($this->Request['id']);
+			$a=articuloRecord::finder()->find("ID_ARTICULO=? AND DISPONIBILIDAD='Libre'",$this->Request['id']);
 		
 			$this->img_ar->ImageUrl=imagenRecord::finder()->findByPk($a->ID_IMAGEN)->RUTA_IMAGEN;
 			$this->Lbl_Nombre->Text=$a->NOMBRE_PRODUCTO;

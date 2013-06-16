@@ -12,6 +12,7 @@ class solicitudRecord extends TActiveRecord
 	public $USU_ID_USUARIO;//a quien se le envia la solicitud
 	public $ART_ID_ARTICULO;
 	public $MENSAJE;
+	public $FECHA_PROPUESTA;
 	public $FECHA_RESPUESTA;
 	public $ESTADO;
 
