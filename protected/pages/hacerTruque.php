@@ -36,6 +36,7 @@ class hacerTruque extends Tpage{
 			$u->USU_ID_USUARIO=$this->a->ID_USUARIO;
 			$u->ART_ID_ARTICULO=$this->a->ID_ARTICULO;
 			$u->MENSAJE=$this->mensaje->Text;
+			$u->FECHA_PROPUESTA=date("Y-m-d",time());
 			$u->save();
 			$url=$this->Service->constructUrl('envioExitoso',array('ms'=>$this->Request['ms']));
 			$this->Response->redirect($url);

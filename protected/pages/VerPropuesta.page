@@ -5,7 +5,7 @@
 			<table>
 				<tr>
 					<td>
-					<h2>Requieren este producto</h2><br />
+					<h2>Te ofrecen este producto</h2><br />
 					<com:TImage ID="img_ar1" ImageUrl="" Width="100px" AlternateText=""/>
 					</td>
 					<td>
@@ -31,7 +31,7 @@
 			<table>
 				<tr>
 					<td>
-						<h2>Te ofrecen este producto</h2><br />
+						<h2>Requieren este producto</h2><br />
 						<com:TImage ID="img_ar2" ImageUrl="" Width="100px" AlternateText=""/>
 					</td>
 				</tr>

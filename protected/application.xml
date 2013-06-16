@@ -36,6 +36,7 @@
   <!-- configuration for available services -->
   <services>
     <service id="page" class="TPageService" DefaultPage="Inicio" />
+    <service id="graph" class="Application.common.Grafica" Width="600" Height="400" Shadow="false" />
   </services>
 
   <!-- application parameters
