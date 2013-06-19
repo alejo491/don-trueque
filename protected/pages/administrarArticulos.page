@@ -4,7 +4,7 @@
 	<div align "center">
 		<div >
 		<table>
-	 
+	
 		<com:TDataGrid ID="ver"
 			DataKeyField="ID_ARTICULO"
 			
@@ -18,7 +18,7 @@
 			HeaderStyle.BackColor="#BDBDBD"
 			HeaderStyle.ForeColor="BLACK"
 		>
-		
+	
 		<com:TBoundColumn ID="column1"
 			HeaderText="ID ARTICULO"
 			DataField="ID_ARTICULO"/>

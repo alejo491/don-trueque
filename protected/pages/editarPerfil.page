@@ -4,7 +4,7 @@
 <div align="center">
 	<h1><com:TLabel ID="lbl_name_user" Text=""/></h1>
 	<table>
-	
+
 		<tr>
 		  <td><com:TLabel ID="lbl_nombre" Text="Nombre: "/></td>
 		  <td><com:TTextBox ID="txt_nombre" Text=""/></br></td>

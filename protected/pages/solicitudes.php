@@ -9,7 +9,9 @@ class solicitudes extends TPage{
 			
 	}
 	public function CargarDatos($param){
-		foreach($this->ObtenerDatos($param) as $i){
+		$x=$this->ObtenerDatos($param);
+		if($x!=null){
+		foreach($x as $i){
 			
 			$row= new TTableRow();
 			$cell_a=new TTableCell();
@@ -36,13 +38,17 @@ class solicitudes extends TPage{
 		
 			$this->verDatos->Controls->add($row);
 			$this->verDatos->Controls->add($row2);
+			}
+		}else{
+			$this->cphCuerpo->controls->add('<h1>Usted no tiene solicitudes pendientes</h1>');
 		}
 	}
 	
 	public function ObtenerDatos($param){
-		$s=solicitudRecord::finder()->findAll("USU_ID_USUARIO=?",$_SESSION['id']);
+		$s=solicitudRecord::finder()->findAll("USU_ID_USUARIO=? AND ESTADO='progreso'",$_SESSION['id']);
 		$Datos=array();
 		$i=0;
+		if($s!=null){
 		foreach ($s as $x){
 			$a=articuloRecord::finder()->findByPk($x->ID_ARTICULO);
 			$b=articuloRecord::finder()->findByPk($x->ART_ID_ARTICULO);
@@ -56,24 +62,15 @@ class solicitudes extends TPage{
 							);
 			$i=$i+1;
 		}
+		}
+		else{
+			$Datos=null;
+		}
 		return $Datos;
 		
 	}
 	
 	
-	function aceptar_click($sender,$param){
-		$item=$param->Item;
-		$id=$this->ver->DataKeys[$item->ItemIndex];
-		$url=$this->Service->constructUrl('solicitudes',array('id'=>$id));
-		$this->Response->redirect($url);
-	}
-	
-	public function rechazar_click($sender,$param){
-		$item=$param->Item;
-		$id=$this->ver->DataKeys[$item->ItemIndex];
-		$url=$this->Service->constructUrl('solicitudes',array('id'=>$id));
-		$this->Response->redirect($url);
-	}
 	
 	
 }
