@@ -1,40 +1,44 @@
 <?php
 
-	class Estadisticas extends Tpage{
-		public function onInit($param) {
+
+	class Estadisticas extends TPage{
+		public function onLoad($param) {
 		parent::onLoad($param);
- 
-		$this->generateProductsGraph();
+ 		
+		
+		
+		
+		
 	}
- 
-	private function generateProductsGraph() {
-		$ydata1 = array();
-		$ydata2 = array();
-		$xdata = array();
- 
-		// Prepare array of x values
-		$xValues = ...
-		foreach( $xValues as $xValue ) {
-			$xdata[] = $xValue;
+ 	
+	public function Consulta_click($sender,$param){
+		$tipo=0;
+		$Vx=array();
+		$Vy=array();
+		if($this->radio1->Checked){
+			$tipo=1;//grafico barras
 		}
- 
-		// Prepare array of ydata1
-		foreach( $xValues as $xValue ) {
-			$products = GET_PRODUCTS_DEPENDING_ON_xValue();
-			$ydata1[] = count($products);
+		if($this->radio1->Checked){
+			$tipo=2;//grafico torta
 		}
- 
-		// Prepare array of ydata2
-		foreach( $xValues as $xValue ) {
-			$products = GET_PRODUCTS_DEPENDING_ON_xValue();
-			$ydata2[] = count($products);
-		}
- 
-		$ydata1 = implode(',', $ydata1);
-		$ydata2 = implode(',', $ydata2);
-		$xdata = implode(',', $xdata);
-		$this->ProductsImage->ImageUrl = $this->getRequest()->constructUrl('graph', 1, array( 'xdata' => $xdata, 'ydata1' => $ydata1, 'ydata2' => $ydata2, 'ytitle' => 'title'), false);
+		$i=0;
+		$datos=solicitudRecord::ObtenerPermutas(date('Y-m-d',$this->datedesde->TimeStampFromText),date('Y-m-d',$this->datehasta->TimeStampFromText),'todas');
+		
+		if($datos!=null){
+			foreach($datos as $b){
+				$Vx[]=$b['CATEGORIA'];
+				
+				$Vy[]=$b['NUMERO'];
+			
+			}
+		echo("assets/estadisticas.php?t=$");
+		//$this->imgPermuta->ImgeUrl
+			
+			
+		}else{$this->imgPermuta->ImageUrl="assets/images/nodatos.jpg";}
+		
 	}
+		
 	
 	}
 

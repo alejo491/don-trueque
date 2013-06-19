@@ -63,7 +63,12 @@
 		
 			<com:TButton ID="btn_Aceptar"
 				Text="Aceptar"
-				OnClick="Aceptar_Clicked"/>
+				OnClick="Aceptar_Clicked"/></td>
+		<td align="middle"><br/><br/>
+			<com:TButton ID="btn_Atras"
+				Text="Atras"
+				OnClick="Atras_Clicked"/>
+		</td>
 		
 	</tr>
 </table>

@@ -15,8 +15,8 @@
 		$this->Response->redirect($url);
 		}
 	
-	public function Cancelar_Clicked(){
-		$url=$this->Service->constructUrl('principalRegistrado');
+	public function Atras_Clicked(){
+		$url=$this->Service->constructUrl('Donacion');
 		$this->Response->redirect($url);
 		}
 	}

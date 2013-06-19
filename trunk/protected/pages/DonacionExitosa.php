@@ -7,7 +7,7 @@
 			 
 		$time=5;
 		  
-		$url=$this->Service->constructUrl('principalRegistrado');
+		$url=$this->Service->constructUrl('solicitudes');
 		header("Refresh: $time; url=$url");
 		   
 		 }

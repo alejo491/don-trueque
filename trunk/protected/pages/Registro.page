@@ -67,7 +67,7 @@
                         
                         ErrorMessage="El nombre de usuario debe tener almenos una letra"
                         Display="Dynamic"/><br />
-                     <com:TLabel ID="lbl_val" style="color:red; Enabled="False" Visible="False" Text="El nombre de usuario ya existe"/>
+                     <com:TLabel ID="lbl_val" style="color:red;" Enabled="False" Visible="False" Text="El nombre de usuario ya existe"/>
                        
                   </td>
              </tr>
@@ -181,7 +181,90 @@
              
              <tr>
                   <td>
-                       <com:TTextBox ID="t001" ReadOnly="True" TextMode="MultiLine"Text=""/><br />
+                       <com:TTextBox ID="t001" width="500px"  height="300px" ReadOnly="True" TextMode="MultiLine" Text="
+T&eacute;rminos y Condiciones generales
+
+Los t&eacute;rminos y condiciones que se establecen en este documento son aplicables al uso de la web. Los usuarios de donTrueque.com, aceptan sin modificaciones los t&eacute;rminos y condiciones que se establecen a continuaci&oacute;n. Las modificaciones que se realicen en el servicio, podr&iacute;an implicar la modificaci&oacute;n de los presentes t&eacute;rminos y condiciones. En caso de que el usuario no estuviere de acuerdo con las presentes condiciones, deber&aacute; abstenerse de la utilizaci&oacute;n del sitio y/o servicios.
+
+1- Licencias
+
+Este sitio web contiene im&aacute;genes, informaci&oacute;n y otros contenidos que constituyen propiedad intelectual de donTrueque.com y/o de sus usuarios. De acuerdo con estas condiciones, un usuario puede publicar sus contenidos y consultar los contenidos publicados por otros usuarios de este sitio web. Pero, para la protecci&oacute;n de los mismos, ninguna persona puede: (I) Reproducir este sitio web o cualquier parte del mismo; (II) divulgar informaci&oacute;n obtenida en este sitio web a terceros. Ninguna persona puede vender, modificar o crear trabajos derivados de los contenidos disponibles, ni cambiar o eliminar el copyright. donTrueque.com se reserva los derechos que legalmente pudiera ostentar sobre los referidos contenidos. Al publicar cualquier informaci&oacute;n en este sitio web, el usuario otorga a donTrueque.com una licencia irrevocable, universal y gratuita para usar, reproducir, modificar y distribuir esta informaci&oacute;n a terceros para realizar labores de funcionamiento y/o mantenimiento.
+El usuario es libre para modificar o borrar en cualquier momento la informaci&oacute;n que ha publicado en este sitio web.
+2-  Pol&iacute;tica de funcionamiento
+
+Con el objetivo de brindar un servicio de excelencia a sus usuarios, donTrueque.com establecer&aacute; condiciones para el uso de su sitio web. Estas condiciones se refieren a la interacci&oacute;n del usuario con el sitio web. donTrueque.com no se responsabiliza de que en alg&uacute;n momento la informaci&oacute;n suministrada por los usuarios sea borrada o que ocurra un fallo durante el proceso de almacenamiento de la misma.
+   
+   2.1- Enlaces y archivos adjuntos
+   
+   Los anuncios publicados pueden contener enlaces a otros sitios web no gestionados por donTrueque.com. donTrueques.com no ejerce control alguno sobre dichos archivos, ni es responsable de sus contenidos. La existencia de estos enlaces y archivos, no implica que donTrueque.com lo avale, garantice o recomiende esos sitios web, ni avale la informaci&oacute;n contenida en los mismos.
+
+3-  Actividades no permitidas
+
+Con el objetivo de brindar un servicio de excelencia que se adecue a las necesidades de la comunidad de los usuarios de donTrueque.com, se hace necesario establecer una serie de reglas de uso que protejan al usuario de este servicio.
+Se encuentra prohibido que un usuario publique un anuncio o env&iacute;e un mensaje a otros usuarios, a trav&eacute;s de una direcci&oacute;n de email o utilizando cualquier otro tipo de identidad, tal que:
+Contenga informaci&oacute;n de contacto de una persona que no desee que tal informaci&oacute;n aparezca en esa comunicaci&oacute;n.
+Que la informaci&oacute;n que dicho anuncio contenga sea falsa, difamatoria, inmoral, insultante, pornogr&aacute;fica, obscena, u inadmisible.
+Que env&iacute;e informaci&oacute;n que sea ilegal, incite a la violencia o a cualquier tipo de comportamiento criminal.
+Que revele asuntos privados o que viole los derechos humanos relacionados con la privacidad y la publicidad.
+Que contenga virus o cualquier otra caracter&iacute;stica contaminante o destructiva, o que interfiera en el correcto funcionamiento de este sitio web o el acceso de cualquier usuario a este sitio.
+Que republique informaci&oacute;n suministrada anteriormente por un usuario diferente.
+Que incite a otras personas a violar las condiciones de funcionamiento de donTrueque.com y/o estos t&eacute;rminos y condiciones.
+Que infrinja la propiedad intelectual, industrial o cualquier derecho de terceros.
+Que ponga a la venta productos o servicios cuya acci&oacute;n, distribuci&oacute;n o divulgaci&oacute;n est&eacute; regulada.
+   * Venta de productos falsificados, r&eacute;plicas y/o copias de cualquier art&iacute;culo, puntos de carnet de conducir, etc.
+   *  Estupefacientes, drogas, alucin&oacute;genos o cualquier tipo de sustancia no permitida por la ley vigente, en ninguna de las formas existentes. Venta de utensilios o implementos destinados a producirlas, procesarlas o consumirlas. Art&iacute;culos que promuevan o inciten su producci&oacute;n, consumo o distribuci&oacute;n.
+   * Medicinas y/o art&iacute;culos cuya venta est&eacute; sujeta a prescripci&oacute;n m&eacute;dica o que no sean de venta libre al p&uacute;blico.
+   * Sustancias que contengan anab&oacute;licos y/o esteroides
+   * Equipos farmac&eacute;uticos
+   *  Armas de fuego o cualquier tipo de armas. Venta de bienes relacionados con las armas de fuego por ejemplo municiones, balas, cartuchos, silenciadores.
+   * Alcohol o cualquier otro tipo de material peligroso
+   * &oacute;rganos o restos humanos, como ser: sangre, esperma, huesos, &oacute;rganos, piel, etc.
+   * Animales cuya venta se encuentre prohibida por legislaciones vigentes, tales como animales salvajes, en peligro de extinci&oacute;n o sobre los cuales existe alg&uacute;n tipo de prohibici&oacute;n legal.
+   * Art&iacute;culos que hagan publicidad, promuevan o inciten de cualquier forma a la violencia, delitos de cualquier tipo o discriminaci&oacute;n, basada entre otras, en cuestiones de raza, religi&oacute;n, sexo, nacionalidad, orientaci&oacute;n sexual o de cualquier otro tipo.
+   * Documentos de identidad tanto nacionales como extranjeros, por ejemplo: certificados de nacimiento, licencias de conducir, pasaportes, visas, etc.
+   *  No se podr&aacute;n ofrecer solicitudes o servicios para gestionar dichos documentos. Inclusive la venta de cualquier art&iacute;culo dise&ntilde;ado para la fabricaci&oacute;n de los mismos.
+   * Juego
+   * Trabajo desde casa
+   * Asociaciones o empresas de funcionamiento piramidal (basadas en afiliados o referidos), con o sin &aacute;nimo de lucro.
+   * Solo ser&aacute;n permitidos anuncios sobre prostituci&oacute;n o servicios relacionados con el sexo en la categor&iacute;a correspondiente, los mismos se encuentran prohibidos fuera de esta secci&oacute;n, as&iacute; como lo est&aacute; la promoci&oacute;n de lo citado anteriormente.
+   * Pedofilia, pornograf&iacute;a infantil, desnudos de menores o que de cualquier modo involucren a personas menores de edad.
+   * Sexo forzado, violaciones, pel&iacute;culas o fotograf&iacute;as que hayan sido tomadas de forma ilegal o sin el consentimiento de las mismas.
+   
+   3.1- SPAM
+   
+   Al realizar las publicaciones el usuario est&aacute; obligado a elegir la categor&iacute;a m&aacute;s adecuada para su anuncio. Se encuentra prohibido publicar anuncios, por ejemplo, de “Contactos” dentro de categor&iacute;a de “Venta”.
+   Anuncios m&uacute;ltiples de forma extensiva se encuentran prohibidos y pueden llevar su cuenta de e-mail a la exclusi&oacute;n de donTrueque.com.
+   
+   3.2– Eliminaci&oacute;n de Contenidos
+   
+   donTrueque.com se reserva el derecho, pero no tiene obligaci&oacute;n de rechazar, modificar o eliminar anuncios que no se adapten a los objetivos de la comunidad de usuarios. sonTrueque.com se reserva el derecho de eliminar dichos anuncios sin previo aviso y de suspender o finalizar el acceso a este sitio web, si se considerara que han cometido actos que perjudican o han perjudicado la experiencia de alg&uacute;n usuario, o que los mismos han supuesto una responsabilidad para Trueques.com o para cualquier otro usuario del sitio web.
+   
+4- Prohibido el uso a menores
+
+Queda prohibido el ingreso a la categor&iacute;a “Personales” a menores de 18 a&ntilde;os de edad. En esta categor&iacute;a / sub-categor&iacute;as se ofrecen productos y/o servicios cuyo contenido es de car&aacute;cter sexual y/o er&oacute;tico, por tanto, s&oacute;lo podr&aacute;n ingresar las personas mayores de 18 a&ntilde;os. Queda terminantemente prohibido el ingreso a menores de edad.
+
+5-NO Garant&iacute;a
+
+En la medida que lo permita la legislaci&oacute;n vigente, donTrueque.com queda exonerado de cualesquiera garant&iacute;as, expl&iacute;citas o impl&iacute;citas, incluidas las garant&iacute;as de comerciabilidad e idoneidad para un fin determinado.
+Al utilizar este sitio web el usuario el usuario asume toda la responsabilidad y riesgo sobre el uso del mismo y de la informaci&oacute;n que este contiene. donTrueque.com no ofrece garant&iacute;as en cuanto a la fiabilidad o imprecisiones de de la informaci&oacute;n publicada. El usuario deber&aacute; mantener una copia de la informaci&oacute;n que suministra a Trueques.com, ya que tampoco es responsable de la informaci&oacute;n suministrada.
+donTrueque.com no garantiza el acceso continuo e ininterrumpido a este sitio web o que el mismo est&eacute; libre de errores.
+
+6- Limitaci&oacute;n de Responsabilidad
+
+donTrueque.com no se har&aacute; responsable de ning&uacute;n coste o da&ntilde;os provocados por o relacionados con el uso de este sitio web o la informaci&oacute;n que este contiene, ni en el caso de que dicha responsabilidad provenga de una demanda basada en un contrato, o a partir de una negligencia de cualquier tipo. Algunas jurisdicciones no permiten la exclusi&oacute;n de las responsabilidades ante cierto tipo de da&ntilde;os, en el caso de que donTrueque.com sea excluido de la limitaci&oacute;n de responsabilidades, se asumir&aacute; lo m&iacute;nimo que la ley permita.
+
+7- Informaci&oacute;n del Usuario
+
+donTrueque.com hace de la informaci&oacute;n suministrada por los usuarios se detalla en la Pol&iacute;tica de Privacidad. Al utilizar este sitio web el usuario acepta los t&eacute;rminos y condiciones de uso establecidos en dicha secci&oacute;n.
+
+8- Indemnizaci&oacute;n
+
+El usuario acepta defender y mantener indemne, as&iacute; como asumir cualesquiera gastos (incluidos pero no limitados a los costes de abogados) de acusaci&oacute;n contra donTrueque.com, sus subsidiarias, filiales, directivos, administradores, socios y empleados, de cualquier acci&oacute;n o procedimiento , si dicha acci&oacute;n o procedimiento se basa en informaci&oacute;n que dicho usuario ha anunciado en este sitio web, en el uso que el mismo ha hecho de este sitio web o la utilizaci&oacute;n de software o programas que perjudiquen el correcto funcionamiento de los servidores, por su acto de violaci&oacute;n de estos t&eacute;rminos y condiciones, y/o la violaci&oacute;n de los derechos de terceras partes.
+
+9- Generalidades
+
+El usuario no puede ceder sus derechos y/o obligaciones derivadas de las presentes condiciones de servicio, ni total, ni parcialmente, a terceros y cualquier intento de lo anterior se entender&aacute; nulo o inv&aacute;lido. donTrueque.com puede ceder sus derechos y/u obligaciones establecidos bajo estas condiciones. Teniendo en cuenta lo anterior, las presentes condiciones ser&aacute;n vinculantes y aplicables en beneficio de ambas partes, sus sucesores y cesionarios autorizados. La ausencia de respuesta de donTrueque.com ante un incumplimiento de estas condiciones no constituye una aceptaci&oacute;n del incumplimiento de la cl&aacute;usula violada, ni de ninguna otra, ni la renuncia a cualquier acci&oacute;n o procedimiento que de la misma se pudiera derivar. Estos t&eacute;rminos comprenden el acuerdo entre las partes en relaci&oacute;n con el uso de este sitio web y dejan sin efecto cualquier acuerdo adoptado con anterioridad relacionado con el uso de este sitio web. Si alguna de las cl&aacute;usulas de estos t&eacute;rminos fuera considerada inv&aacute;lida o inaplicable por alguna raz&oacute;n, el resto de las cl&aacute;usulas continuar&aacute;n siendo v&aacute;lidas y aplicables, y el &aacute;rbitro deber&aacute; reemplazarla por una v&aacute;lida que cumpla con el mismo objetivo. Dichos t&eacute;rminos tienen como &uacute;nico y exclusivo objetivo beneficiar al usuario de donTrueque.com y a donTrueque.com y no tiene como objetivo beneficiar a terceras partes. En caso de conflicto entre la versi&oacute;n en ingl&eacute;s de estos t&eacute;rminos y cualquier otra versi&oacute;n de los mismos, la versi&oacute;n en castellano prevalecer&aacute; sobre las dem&aacute;s."/><br />
+                   
                        
                        <com:TCheckBox ID="chk_condiciones" value=1 Text="He leido y acepto las condiciones"/><br />
                        

@@ -4,16 +4,20 @@
 
 	<h1 align ="center">ESTADISTICAS</h1><br />
 	<h2>Consulta Permutas</h2>
-	
+	<com:TLabel ID="info1" Text="Esta grafica muestra la cantidad de propuestas hechas por categoria en un tiempo determinado" forecolor="blue"/>
 	<table>
 		<tr>
 				<td>
-				<com:TLabel ID="lblfecdesde" Text="Desde: "/>      
+				<com:TLabel ID="lblfecdesde" Text="Desde: "/><br />
+				      
 				</td>
 				<td>                        
 				<com:TDatePicker ID="datedesde"
-					DateFormat="yyyy-MM-dd"
+					DateFormat="yyyy-MMMM-dd"
 					Mode="ImageButton"
+					  FromYear="1965"
+					     UpToYear="2013"
+					Culture="es"
 					InputMode="DropDownList"/>												   
 				</td>							
 		</tr>	
@@ -24,32 +28,35 @@
 					</td>
 					<td>
 					<com:TDatePicker ID="datehasta"
-						DateFormat="yyyy-MM-dd"
+						DateFormat="yyyy-MMMM-dd"
+						  FromYear="1965"
+						   UpToYear="2013"
 						Mode="ImageButton"
+						Culture="es"
 						InputMode="DropDownList"/>
 					</td>
 				</tr>
 		
 		<tr>
 			<td>
-			<com:TRadioButton ID="radio1" GroupName="tipo" Text="Grafico de barras"/><br />
+			<com:TRadioButton ID="radio1" GroupName="tipo" Text="Grafico de barras" Checked="true"/><br />
 			<com:TRadioButton ID="radio2" GroupName="tipo" Text="Grafico en pastel"/>
 			</td>
-			<td>
-				 <com:TImage ID="imgPermuta"
-				 	ImageUrl="" 
-				 	AlternateText="text"/>
-			</td>
+			
 			<td>
 			<com:TButton ID="btnconpermu"
 				Width = "130px"
-				Text="Consultar Permuta"
-				OnClick="button_Clicked"/>
+				Text="Consultar"
+				OnClick="Consulta_click"/>
+			</td>
+			<td>
+				 
 			</td>
 		</tr>
 		
 		</table>
 		<br/>
+		<com:TImage ID="imgPermuta" ImageUrl=""/><br />
 	<h2>Otras Consultas</h2>
 	<table>
 	<tr>
@@ -58,8 +65,11 @@
 				</td>
 				<td>                        
 				<com:TDatePicker ID="datedesd"
-					DateFormat="yyyy-MM-dd"
+					DateFormat="yyyy-MMMM-dd"
 					Mode="ImageButton"
+					  FromYear="1965"
+					   UpToYear="2013"
+					Culture="es"
 					InputMode="DropDownList"/>												   
 				</td>							
 		</tr>	
@@ -70,31 +80,33 @@
 					</td>
 					<td>
 					<com:TDatePicker ID="datehast"
-						DateFormat="yyyy-MM-dd"
+						DateFormat="yyyy-MMMM-dd"
 						Mode="ImageButton"
+						  FromYear="1965"
+						   UpToYear="2013"
+						Culture="es"
 						InputMode="DropDownList"/>
 					</td>
 		</tr>
 		<tr>
 			<td>
-			<com:TRadioButton ID="radio11" GroupName="tipo" Text="Grafico de barras"/><br />
-			<com:TRadioButton ID="radio22" GroupName="tipo" Text="Grafico en pastel"/>
+			<com:TRadioButton ID="radio11" GroupName="tipo1" Text="Grafico de barras" Checked="true"/><br />
+			<com:TRadioButton ID="radio22" GroupName="tipo1" Text="Grafico en pastel"/>
 			</td>
-			<td>
-				 <com:TImage ID="ver"
-					ImageUrl="" 
-					AlternateText="text"/>
-			</td>
+			
+				 
+			
 			<td>
 			<com:TButton ID="btnver"
 				Width = "130px"
-				Text="Ver"
-				OnClick="button_Clicked"/>
+				Text="Consultar"
+				OnClick="Otras_Clicked"/>
 			</td>
 		</tr>
 		
 	
 
-	</table>
+	</table><br />
+	<com:TImage ID="ver"/>
 
 </com:TContent>

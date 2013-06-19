@@ -9,7 +9,7 @@
 		}
 	
 	public function Cancelar_Clicked(){
-		$url=$this->Service->constructUrl('principalRegistrado');
+		$url=$this->Service->constructUrl('solicitudes');
 		$this->Response->redirect($url);
 		}
 	}

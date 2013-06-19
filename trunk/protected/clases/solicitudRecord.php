@@ -20,5 +20,41 @@ class solicitudRecord extends TActiveRecord
 	{
 		return parent::finder($className);
 	}
+	
+	public static function ObtenerPermutas($desde,$hasta,$consulta){
+	    $connection=new TDbConnection();
+		$connection->setConnectionString("mysql:host=localhost;dbname=trueque");
+		$connection->setUsername("root");
+		$connection->setPassword("46081098");
+		if($consulta='todas'){
+			$sql="SELECT CATEGORIA , COUNT(ID_SOLICITUD) FROM solicitud  NATURAL JOIN  articulo 
+				WHERE  FECHA_PROPUESTA
+				BETWEEN ' $desde'
+				AND  '$hasta'
+				GROUP BY  CATEGORIA";
+		}
+		
+		
+		
+		
+		$connection->Active=true;
+		$dataReader=$connection->createCommand($sql)->query();
+		$connection->Active=false;
+		$dataReader->bindColumn(2,$ca);
+		$dataReader->bindColumn(1,$id);
+		$i=0;
+		
+		while($dataReader->read()!==false)
+		{
+			$a['CATEGORIA']=utf8_encode($id);
+			$a['NUMERO']=$ca;
+			$b[$i]=$a;
+			$i=$i+1;
+		}
+		
+		return $b;
+		
+		
+	}
 }
 ?>

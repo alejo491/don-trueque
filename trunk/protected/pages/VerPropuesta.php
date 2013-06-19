@@ -52,20 +52,34 @@ class VerPropuesta extends Tpage{
 					$this->Lbl_Descripcion2->Text=$this->b->DESCRIPCION;
 				}
 			}
-			
-			
-			
-		
-			
-			
-			
+				
 		}
+		
 		public function Aceptar_Clicked($param){
+			$x=solicitudRecord::finder()->findByPk($this->Request['id']);
+			$x->ESTADO='Aceptado';
+			$x->FECHA_RESPUESTA=date("y-m-d", time());
+		
+			$this->a->DISPONIBILIDAD='Truequeado';
+			$this->b->DISPONIBILIDAD='Truequeado';
+			$x->save();
+			$this->a->save();
+			$this->b->save();
+			
+			$url=$this->Service->constructUrl('truequeExitoso');
+			$this->Response->redirect($url);
 			
 		}
-		public function Cancelar_Clicked($param){
 		
+		public function Cancelar_Clicked($param){
+			$x=solicitudRecord::finder()->findByPk($this->Request['id']);
+			$x->ESTADO='Cancelado';
+			$x->save();
+			
+			$url=$this->Service->constructUrl('solicitudes');
+			$this->Response->redirect($url);
 		}
+
 }
 
 ?>
