@@ -43,17 +43,19 @@ class solicitudRecord extends TActiveRecord
 		$dataReader->bindColumn(2,$ca);
 		$dataReader->bindColumn(1,$id);
 		$i=0;
-		
-		while($dataReader->read()!==false)
-		{
-			$a['CATEGORIA']=utf8_encode($id);
-			$a['NUMERO']=$ca;
-			$b[$i]=$a;
-			$i=$i+1;
+		$b=null;
+			while($dataReader->read()!==false)
+			{
+				$a['CATEGORIA']=utf8_encode($id);
+				$a['NUMERO']=$ca;
+				$b[$i]=$a;
+				$i=$i+1;
+			}
+		if($b!=null){	
+			return $b;
+		}else{
+			return null;
 		}
-		
-		return $b;
-		
 		
 	}
 }
