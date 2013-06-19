@@ -1,4 +1,4 @@
-<%@ Masterclass="templateregistrado" %>
+<%@ Masterclass="templateadministrador" %>
 
 <com:TContent ID="cphCuerpo">
 
@@ -43,22 +43,30 @@
 			<com:TRadioButton ID="radio2" GroupName="tipo" Text="Grafico en pastel"/>
 			</td>
 			
-			<td>
-			<com:TButton ID="btnconpermu"
-				Width = "130px"
-				Text="Consultar"
-				OnClick="Consulta_click"/>
-			</td>
-			<td>
-				 
-			</td>
+			
 		</tr>
 		
 		</table>
-		<br/>
+		<br/><div align="middle">
+		<com:TButton ID="btnconpermu"
+				Width = "130px"
+				Text="Consultar"
+				OnClick="Consulta_click"/><br />
+		</div>
+		<br/><div align="middle">
+		<com:TLabel ID="t1" Text="" forecolor="blue"/>
 		<com:TImage ID="imgPermuta" ImageUrl=""/><br />
+		</div>
 	<h2>Otras Consultas</h2>
 	<table>
+	<tr>
+		<td><com:TLabel ID="t3" Text="Escoja una consulta:"/></td>
+		<td><com:TDropDownList ID="tipo_consulta">
+						<com:TListItem Text="Publicacion Articulos" Value="PA" />
+						<com:TListItem Text="Articulos por categoria" Value="AC" />
+					
+						</com:TDropDownList></td>
+	</tr>
 	<tr>
 				<td>
 				<com:TLabel ID="lblfecdesd" Text="Desde: "/>      
@@ -93,20 +101,19 @@
 			<com:TRadioButton ID="radio11" GroupName="tipo1" Text="Grafico de barras" Checked="true"/><br />
 			<com:TRadioButton ID="radio22" GroupName="tipo1" Text="Grafico en pastel"/>
 			</td>
-			
-				 
-			
-			<td>
-			<com:TButton ID="btnver"
+		</tr>
+	</table>
+	<br/><div align="middle">
+		<com:TButton ID="btnver"
 				Width = "130px"
 				Text="Consultar"
-				OnClick="Otras_Clicked"/>
-			</td>
-		</tr>
-		
+				OnClick="Otras_Clicked"/><br />
+		</div>
+		<br/><div align="middle">
+		<com:TLabel ID="t2" Text="" forecolor="blue"/>
+		<com:TImage ID="ver"/><br />
+		</div>
 	
-
-	</table><br />
-	<com:TImage ID="ver"/>
+	
 
 </com:TContent>

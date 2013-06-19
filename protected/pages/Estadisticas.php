@@ -12,30 +12,43 @@
 	}
  	
 	public function Consulta_click($sender,$param){
-		$tipo=0;
+		
 		$Vx=array();
 		$Vy=array();
-		if($this->radio1->Checked){
-			$tipo=1;//grafico barras
-		}
-		if($this->radio1->Checked){
-			$tipo=2;//grafico torta
-		}
-		$i=0;
-		$datos=solicitudRecord::ObtenerPermutas(date('Y-m-d',$this->datedesde->TimeStampFromText),date('Y-m-d',$this->datehasta->TimeStampFromText),'todas');
+		$Vy1=array();
 		
-		if($datos!=null){
-			foreach($datos as $b){
-				$Vx[]=$b['CATEGORIA'];
+			$datos=solicitudRecord::ObtenerPermutas(date('Y-m-d',$this->datedesde->TimeStampFromText),date('Y-m-d',$this->datehasta->TimeStampFromText),'todas');
 				
-				$Vy[]=$b['NUMERO'];
+			if($datos!=null){
+					foreach($datos as $b){
+						$Vx[]=$b['CATEGORIA'];
+						
+						$Vy[]=$b['NUMERO'];
+					
+					}
+					$t=0;
+					foreach($Vy as $a){
+						$t=$t+$a;
+					}
+					
+					foreach($Vy as $c){
+						$Vy1[]=($c*100/$t);
+					}
+					if($this->radio1->Checked){
+					$this->t1->Text="Solicitudes de trueque entre ".date('Y-m-d',$this->datedesde->TimeStampFromText)." y ".date('Y-m-d',$this->datehasta->TimeStampFromText);
+					$this->imgPermuta->ImageUrl="assets/estadisticas_barra.php?x=".implode(',',$Vx)."&y=".implode(',',$Vy1)."";
+					}
+					if($this->radio2->Checked){
+						$this->t1->Text="Solicitudes de trueque entre ".date('Y-m-d',$this->datedesde->TimeStampFromText)." y ".date('Y-m-d',$this->datehasta->TimeStampFromText);
+						$this->imgPermuta->ImageUrl="assets/estadisticas_pie.php?x=".implode(',',$Vx)."&y=".implode(',',$Vy1)."";
+					}
 			
+			}else{
+			$this->imgPermuta->ImageUrl="assets/images/nodatos.jpg";
 			}
-		echo("assets/estadisticas.php?t=$");
-		//$this->imgPermuta->ImgeUrl
-			
-			
-		}else{$this->imgPermuta->ImageUrl="assets/images/nodatos.jpg";}
+		
+		
+		
 		
 	}
 		
