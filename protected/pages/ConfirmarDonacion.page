@@ -16,6 +16,7 @@
 		</td>
 		<td>
 			<com:TLabel ID="lblNombre" Text=""/>
+			
 		</td>
 	</tr>
 	<tr>
