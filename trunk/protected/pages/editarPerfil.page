@@ -6,16 +6,16 @@
 	<table>
 
 		<tr>
-		  <td><com:TLabel ID="lbl_nombre" Text="Nombre: "/></td>
-		  <td><com:TTextBox ID="txt_nombre" Text=""/></br></td>
+		  <td> <com:TLabel ID="lbl_nombre" Text="Nombre: "/></td>
+		  <td><com:TsafeHtml><com:TTextBox ID="txt_nombre" Text=""/></br></td></com:TsafeHtml>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_apellido" Text="Apellido: "/></td>
-		<td><com:TTextBox ID="txt_apellido" Text=""/></br></td>
+		<td><com:TsafeHtml><com:TTextBox ID="txt_apellido" Text=""/></com:TsafeHtml></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_fecha" Text="Fecha Nacimiento: "/></td>
-		<td><com:TTextBox ID="txt_fecha" Text=""/><com:TLabel ID="lbl_formato" Text=" (aaaa-mm-dd)"/></br></td>
+		<td><com:TsafeHtml><com:TTextBox ID="txt_fecha" Text=""/><com:TLabel ID="lbl_formato" Text=" (aaaa-mm-dd)"/></com:TsafeHtml>/</br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_ubicacion" Text="Ubicacion: "/></td>

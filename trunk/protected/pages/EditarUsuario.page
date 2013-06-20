@@ -10,37 +10,37 @@
 				</td>
 				<td>
 					
-					<com:TTextBox ID="TxtNNombre" Text=""/>
+					<com:TsafeHtml><com:TTextBox ID="TxtNNombre" Text=""/></com:TsafeHtml>
 				
 				</td>
 			</tr>
 			
 			<tr>
 				<td>
-					<strong><com:TLabel ID="Apellido" Text="Apellido"/></strong>
+					<strong><com:TsafeHtml><com:TLabel ID="Apellido" Text="Apellido"/></com:TsafeHtml></strong>
 				</td>
 				
 				<td>
-					<com:TTextBox ID="TxtNApellido" Text=""/>
+					<com:TsafeHtml><com:TTextBox ID="TxtNApellido" Text=""/></com:TsafeHtml>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<strong><com:TLabel ID="NombreUsuario" Text="Nombre de Usuario"/></strong>
+					<strong><com:TsafeHtml><com:TLabel ID="NombreUsuario" Text="Nombre de Usuario"/></com:TsafeHtml></strong>
 				</td>
 				
 				<td>
-					<com:TTextBox ID="TxtNUsuario" Text=""/><br /><com:TLabel ID="error" Text="" forecolor="red"/>
+					<com:TsafeHtml><com:TTextBox ID="TxtNUsuario" Text=""/><br /><com:TLabel ID="error" Text="" forecolor="red"/></com:TsafeHtml>
 				</td>
 			</tr>
 			
 			<tr>
 				<td>
-					<strong><com:TLabel ID="Telefono" Text="Telefono"/></strong>
+					<strong><com:TsafeHtml><com:TLabel ID="Telefono" Text="Telefono"/></strong></com:TsafeHtml>
 				</td>
 				
 				<td>
-					<com:TTextBox ID="TxtNTelefono" Text=""/>
+					<com:TsafeHtml><com:TTextBox ID="TxtNTelefono" Text=""/></com:TsafeHtml>
 
 				</td>
 			</tr>
@@ -50,7 +50,7 @@
 				</td>
 				
 				<td>
-					<com:TTextBox ID="TxtNCorreo" Text=""/>
+					<com:TsafeHtml><com:TTextBox ID="TxtNCorreo" Text=""/></com:TsafeHtml>
 				</td>
 			</tr>
 			

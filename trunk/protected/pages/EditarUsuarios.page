@@ -7,27 +7,27 @@
 	
 		<tr>
 		  <td><com:TLabel ID="lbl_nombre" Text="Nombre: "/></td>
-		  <td><com:TTextBox ID="txt_nombre" Text=""/></br></td>
+		  <td><com:TsafeHtml><com:TTextBox ID="txt_nombre" Text=""/></com:TsafeHtml></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_apellido" Text="Apellido: "/></td>
-		<td><com:TTextBox ID="txt_apellido" Text=""/></br></td>
+		<td><com:TsafeHtml><com:TTextBox ID="txt_apellido" Text=""/></com:TsafeHtml></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_fecha" Text="Fecha Nacimiento: "/></td>
-		<td><com:TTextBox ID="txt_fecha" Text=""/><com:TLabel ID="lbl_formato" Text=" (dd-mm-aaaa)"/></br></td>
+		<td><com:TsafeHtml><com:TTextBox ID="txt_fecha" Text=""/><com:TLabel ID="lbl_formato" Text=" (dd-mm-aaaa)"/></com:TsafeHtml></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_ubicacion" Text="Ubicacion: "/></td>
-		<td><com:TTextBox ID="txt_ubicacion" Text=""/></br></td>
+		<td><com:TsafeHtml><com:TTextBox ID="txt_ubicacion" Text=""/></com:TsafeHtml></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_telefono" Text="Telefono: "/></td>
-		<td><com:TTextBox ID="txt_telefono" Text=""/></br></td>
+		<td><com:TsafeHtml><com:TTextBox ID="txt_telefono" Text=""/></com:TsafeHtml></br></td>
 		</tr>
 		<tr>
 		<td><com:TLabel ID="lbl_correo" Text="Correo Electronico: "/></td>
-		<td><com:TTextBox ID="txt_correo" Text=""/></br></td>
+		<td><com:TsafeHtml><com:TTextBox ID="txt_correo" Text=""/></com:TsafeHtml></br></td>
 		</tr>
 		</br>
 		</br>

@@ -16,22 +16,22 @@
 		</tr>
 		
 		<tr>
-			<td><strong><com:TLabel ID="LblNombre" Text="Nombre: "/></strong><br><br></td>
-			<td><com:TLabel ID="txtNombre" Text=""/><br><br></td>
+			<td><strong><com:TsafeHtml><com:TLabel ID="LblNombre" Text="Nombre: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="txtNombre" Text=""/></com:TsafeHtml><br><br></td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblDesc" Text="Descripción: "/></strong><br><br></td>
-			<td><com:TLabel ID="TxtDesc" Text="label"/>
+			<td><strong><com:TsafeHtml><com:TLabel ID="LblDesc" Text="Descripción: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="TxtDesc" Text="label"/></com:TsafeHtml>
 				
 			<br><br></td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblCatego" Text="Categoria: "/></strong><br><br></td>
-			<td><com:TLabel ID="lbl_cat" Text="label"/><br><br></td>
+			<td><strong><com:TsafeHtml><com:TLabel ID="LblCatego" Text="Categoria: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="lbl_cat" Text="label"/></com:TsafeHtml><br><br></td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="Lblfecha" Text="Fecha de Publicacion: "/></strong><br><br></td>
-			<td><com:TLabel ID="lbl_fec" Text="label"/><br><br></td>
+			<td><strong><com:TsafeHtml><com:TLabel ID="Lblfecha" Text="Fecha de Publicacion: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="lbl_fec" Text="label"/></com:TsafeHtml><br><br></td>
 		</tr>
 		
 	  </table>
