@@ -57,16 +57,10 @@
 		<com:TLabel ID="t1" Text="" forecolor="blue"/>
 		<com:TImage ID="imgPermuta" ImageUrl=""/><br />
 		</div>
-	<h2>Otras Consultas</h2>
+	<h2>Publicacion de Articulos</h2>
+	<com:TLabel ID="info2" Text="Esta grafica muestra la cantidad de articulos publicados por categoria en un tiempo determinado" forecolor="blue"/>
+	
 	<table>
-	<tr>
-		<td><com:TLabel ID="t3" Text="Escoja una consulta:"/></td>
-		<td><com:TDropDownList ID="tipo_consulta">
-						<com:TListItem Text="Publicacion Articulos" Value="PA" />
-						<com:TListItem Text="Articulos por categoria" Value="AC" />
-					
-						</com:TDropDownList></td>
-	</tr>
 	<tr>
 				<td>
 				<com:TLabel ID="lblfecdesd" Text="Desde: "/>      

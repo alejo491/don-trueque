@@ -20,5 +20,40 @@ class articuloRecord extends TActiveRecord
 	{
 		return parent::finder($className);
 	}
+	public static function articulos_publicados($desde,$hasta){
+		 $connection=Prado::getApplication()->getModule('connectionDB')->DataBase;
+		
+		
+			$sql="SELECT CATEGORIA , COUNT(ID_ARTICUlO) FROM articulo 
+				WHERE  FECHA_PUBLICACION
+				BETWEEN ' $desde'
+				AND  '$hasta'
+				GROUP BY  CATEGORIA";
+		
+		
+		
+		
+		
+		$connection->Active=true;
+		$dataReader=$connection->createCommand($sql)->query();
+		$connection->Active=false;
+		$dataReader->bindColumn(2,$ca);
+		$dataReader->bindColumn(1,$id);
+		$i=0;
+		$b=null;
+			while($dataReader->read()!==false)
+			{
+				$a['CATEGORIA']=utf8_encode($id);
+				$a['NUMERO']=$ca;
+				$b[$i]=$a;
+				$i=$i+1;
+			}
+		if($b!=null){	
+			return $b;
+		}else{
+			return null;
+		}
+	
+	}
 }
 ?>

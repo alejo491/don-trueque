@@ -60,8 +60,8 @@ class VerPropuesta extends Tpage{
 			$x->ESTADO='Aceptado';
 			$x->FECHA_RESPUESTA=date("y-m-d", time());
 		
-			$this->a->DISPONIBILIDAD='Truequeado';
-			$this->b->DISPONIBILIDAD='Truequeado';
+			$this->a->DISPONIBILIDAD='TRUEQUEADO';
+			$this->b->DISPONIBILIDAD='TRUEQUEADO';
 			$x->save();
 			$this->a->save();
 			$this->b->save();
@@ -73,7 +73,7 @@ class VerPropuesta extends Tpage{
 		
 		public function Cancelar_Clicked($param){
 			$x=solicitudRecord::finder()->findByPk($this->Request['id']);
-			$x->ESTADO='Cancelado';
+			$x->ESTADO='CANCELADO';
 			$x->save();
 			
 			$url=$this->Service->constructUrl('solicitudes');

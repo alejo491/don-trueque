@@ -54,13 +54,12 @@
 	
 	public function Otras_Clicked($sender,$param){
 	
-		if($this->tipo_consulta->Text="PA"){
-			$datos=solicitudRecord::ObtenerPermutas(date('Y-m-d',$this->datedesd->TimeStampFromText),date('Y-m-d',$this->datehast->TimeStampFromText),'todas');
-			$this->t2->Text="Publicacion de articulos entre ".date('Y-m-d',$this->datedesd->TimeStampFromText)." y ".date('Y-m-d',$this->datehast->TimeStampFromText);
-		}
-		if($this->tipo_consulta->Text=""){
 		
-		}
+			$datos=articuloRecord::articulos_publicados(date('Y-m-d',$this->datedesd->TimeStampFromText),date('Y-m-d',$this->datehast->TimeStampFromText));
+			$this->t2->Text="Publicacion de articulos entre ".date('Y-m-d',$this->datedesd->TimeStampFromText)." y ".date('Y-m-d',$this->datehast->TimeStampFromText);
+			
+		
+		
 			$Vx=array();
 			$Vy=array();
 			$Vy1=array();
@@ -82,17 +81,17 @@
 						foreach($Vy as $c){
 							$Vy1[]=($c*100/$t);
 						}
-						if($this->radio1->Checked){
+						if($this->radio11->Checked){
 						
-						$this->imgPermuta->ImageUrl="assets/estadisticas_barra.php?x=".implode(',',$Vx)."&y=".implode(',',$Vy1)."";
+						$this->ver->ImageUrl="assets/estadisticas_barra.php?x=".implode(',',$Vx)."&y=".implode(',',$Vy1)."";
 						}
-						if($this->radio2->Checked){
+						if($this->radio22->Checked){
 							
-							$this->imgPermuta->ImageUrl="assets/estadisticas_pie.php?x=".implode(',',$Vx)."&y=".implode(',',$Vy1)."";
+							$this->ver->ImageUrl="assets/estadisticas_pie.php?x=".implode(',',$Vx)."&y=".implode(',',$Vy1)."";
 						}
 				
 				}else{
-				$this->imgPermuta->ImageUrl="assets/images/nodatos.jpg";
+				$this->ver->ImageUrl="assets/images/nodatos.jpg";
 				}
 	}
 		
