@@ -16,10 +16,7 @@ class ubicacionRecord extends TActiveRecord
 	
 	public static function consultarCiudades(){
 		
-		$connection=new TDbConnection();
-		$connection->setConnectionString("mysql:host=localhost;dbname=trueque");
-		$connection->setUsername("root");
-		$connection->setPassword("46081098");
+		$connection=Prado::getApplication()->getModule('connectionDB')->DataBase;
 		
 		$connection->Active=true; 
 

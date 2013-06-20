@@ -22,10 +22,8 @@ class solicitudRecord extends TActiveRecord
 	}
 	
 	public static function ObtenerPermutas($desde,$hasta,$consulta){
-	    $connection=new TDbConnection();
-		$connection->setConnectionString("mysql:host=localhost;dbname=trueque");
-		$connection->setUsername("root");
-		$connection->setPassword("46081098");
+	    $connection=Prado::getApplication()->getModule('connectionDB')->DataBase;
+		
 		if($consulta='todas'){
 			$sql="SELECT CATEGORIA , COUNT(ID_SOLICITUD) FROM solicitud  NATURAL JOIN  articulo 
 				WHERE  FECHA_PROPUESTA
