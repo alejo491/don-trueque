@@ -10,16 +10,25 @@
 							<com:TImage ID="img_ar" ImageUrl="" Width="100px" AlternateText=""/>
 						</td>
 						<td>
-							
 							<strong><com:TLabel ID="Nombre" Text="Nombre:"/></strong>
-							<com:TLabel ID="Lbl_Nombre" Text=""/><br />
-							<strong><com:TLabel ID="Ubicacion" Text="Ubicaci&oacute;n:"/></strong>
-							<com:TLabel ID="Lbl_Ubicacion" Text=""/><br />
-							<strong><com:TLabel ID="Descripcion" Text="Descripci&oacute;n:"/></strong>
-							<com:TLabel ID="Lbl_Descripcion" Text=""/><br />
-							<strong><com:TLabel ID="Categoria" Text="Categoria:"/></strong>
-							<com:TLabel ID="Lbl_Categoria" Text=""/><br /><br />
+							<com:TSafeHtml>
+								<com:TLabel ID="Lbl_Nombre" Text=""/><br />
+							</com:TSafeHtml>
 							
+							<strong><com:TLabel ID="Ubicacion" Text="Ubicaci&oacute;n:"/></strong>
+							<com:TSafeHtml>
+								<com:TLabel ID="Lbl_Ubicacion" Text=""/><br />
+							</com:TSafeHtml>
+							
+							<strong><com:TLabel ID="Descripcion" Text="Descripci&oacute;n:"/></strong>
+							<com:TSafeHtml>
+								<com:TLabel ID="Lbl_Descripcion" Text=""/><br />
+							</com:TSafeHtml>
+							
+							<strong><com:TLabel ID="Categoria" Text="Categoria:"/></strong>
+							<com:TSafeHtml>
+								<com:TLabel ID="Lbl_Categoria" Text=""/><br /><br />
+							</com:TSafeHtml>
 							
 						</td>
 					</tr>

@@ -9,7 +9,9 @@
 			<b><com:TLabel ID="nombre" Text="Nombre"/></b>
 		</td>
 		<td>
-			<com:TTextBox ID="txtNombre" Text=""/>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txtNombre" Text=""/>
+			</com:TSafeHtml>
 			
 			<com:TRequiredFieldValidator ID="val1"
 				ControlToValidate="txtNombre"
@@ -22,7 +24,9 @@
 			<b><com:TLabel ID="apellidos" Text="Apellidos"/></b>
 		</td>
 		<td>
-			<com:TTextBox ID="txtApell" Text=""/>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txtApell" Text=""/>
+			</com:TSafeHtml>
 			
 			<com:TRequiredFieldValidator ID="val2"
 				ControlToValidate="txtApell"
@@ -35,7 +39,10 @@
 			<b><com:TLabel ID="cedula" Text="Cedula"/></b>
 		</td>
 		<td>
-			<com:TTextBox ID="txtCedula" Text=""/>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txtCedula" Text=""/>
+			</com:TSafeHtml>
+			
 			<com:TRequiredFieldValidator ID="val3"
 				ControlToValidate="txtCedula"
 				ErrorMessage="Debe ingresar su Cedula"
@@ -47,7 +54,9 @@
 			<b><com:TLabel ID="numeroTarjeta1" Text="Numero de la Tarjeta de Credito"/><b>
 		</td>
 		<td>
-			<com:TTextBox ID="txtNumero" Text=""/>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txtNumero" Text=""/>
+			</com:TSafeHtml>
 			
 			<com:TRequiredFieldValidator ID="val4"
 				ControlToValidate="txtNumero"
@@ -60,7 +69,9 @@
 			<b><com:TLabel ID="contrasena" Text="Contrasena"/></b>
 		</td>
 		<td>
-			<com:TTextBox ID="txtCont" Text=""/>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txtCont" Text=""/>
+			</com:TSafeHtml>
 			
 			<com:TRequiredFieldValidator ID="val5"
 				ControlToValidate="txtCont"
@@ -73,7 +84,9 @@
 			<b><com:TLabel ID="valor" Text="Valor de la Donacion"/></b>
 		</td>
 		<td>
-			<com:TTextBox ID="txtValor" Text=""/>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txtValor" Text=""/>
+			</com:TSafeHtml>
 			
 			<com:TRequiredFieldValidator ID="val6"
 				ControlToValidate="txtValor"

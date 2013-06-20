@@ -22,34 +22,51 @@
 		</tr>
 		
 		<tr>
-			<td><strong><com:TLabel ID="LblNombre" Text="Nombre*: "/></strong><br><br></td>
-			<td><com:TTextBox ID="txtNombre" Text=""/><br><br></td>
+			<td>
+				<strong><com:TLabel ID="LblNombre" Text="Nombre*: "/></strong><br><br>
+			</td>
+			<td>
+				<com:TSafeHtml>
+					<com:TTextBox ID="txtNombre" Text=""/><br><br>
+				</com:TSafeHtml>
+			</td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblDesc" Text="Descripción*: "/></strong><br><br></td>
-			<td><com:TTextBox ID="TxtDesc"
-				Text=""
-				TextMode="MultiLine"/><br><br>
-				</td>
+			<td>
+				<strong><com:TLabel ID="LblDesc" Text="Descripción*: "/></strong><br><br>
+			</td>
+			<td>
+				<com:TSafeHtml>
+					<com:TTextBox ID="TxtDesc" Text="" TextMode="MultiLine"/><br><br>
+				</com:TSafeHtml>
+			</td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblUbicacion" Text="Ubicacion*: "/></strong><br><br></td>
-			<td><com:TDropDownList ID="Ciudades" DataValueField="id" DataTextField="ciudad">
+			<td>
+				<strong><com:TLabel ID="LblUbicacion" Text="Ubicacion*: "/></strong><br><br>
+			</td>
+			<td>
+				<com:TDropDownList ID="Ciudades" DataValueField="id" DataTextField="ciudad">
 				
-			</com:TDropDownList><br><br></td>
+				</com:TDropDownList><br><br>
+			</td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblCatego" Text="Categoria*: "/></strong><br><br></td>
-			<td><com:TDropDownList ID="Productos">
+			<td>
+				<strong><com:TLabel ID="LblCatego" Text="Categoria*: "/></strong><br><br>
+			</td>
+			<td>
+				<com:TDropDownList ID="Productos">
 				<com:TListItem Text="Categoria" Value="null" />
-						<com:TListItem Text="TECNOLOGIA" Value="TECNOLOGIA" />
-						<com:TListItem Value="VEHICULOS" Text="VEHICULOS"/>
-						<com:TListItem Value="ELECTRODOMESTICOS" Text="ELECTRODOMESTICOS"/>
-						<com:TListItem Value="JUGUETES" Text="JUGUETES"/>
-						<com:TListItem Value="LIBROS" Text="LIBROS"/>
-						<com:TListItem Value="PELICULAS" Text="PELICULAS"/>
-						<com:TListItem Value="VIDEOJUEGOS" Text="VIDEOJUEGOS"/>
-			</com:TDropDownList><br><br></td>
+				<com:TListItem Text="TECNOLOGIA" Value="TECNOLOGIA" />
+				<com:TListItem Value="VEHICULOS" Text="VEHICULOS"/>
+				<com:TListItem Value="ELECTRODOMESTICOS" Text="ELECTRODOMESTICOS"/>
+				<com:TListItem Value="JUGUETES" Text="JUGUETES"/>
+				<com:TListItem Value="LIBROS" Text="LIBROS"/>
+				<com:TListItem Value="PELICULAS" Text="PELICULAS"/>
+				<com:TListItem Value="VIDEOJUEGOS" Text="VIDEOJUEGOS"/>
+				</com:TDropDownList><br><br>
+			</td>
 		</tr>
 		
 	  </table>

@@ -14,7 +14,9 @@
              <tr>
                  
                   <td>
+                        <com:TSafeHtml>
                         <com:TTextBox ID="txt_nombre" Text="" /><br />
+                        </com:TSafeHtml>
                         
                         <com:TRequiredFieldValidator ID="val1"
                            ControlToValidate="txt_nombre"
@@ -28,8 +30,9 @@
                               Display="Dynamic"/>
                   </td>
                   <td>
-                     
+                     <com:TSafeHtml>
                         <com:TTextBox ID="txt_apellido" Text="" /><br />
+                     </com:TSafeHtml>
                      
                         <com:TRequiredFieldValidator ID="val2"
                            ControlToValidate="txt_apellido"
@@ -42,19 +45,17 @@
                            ErrorMessage="No se aceptan numeros en este campo"
                            Display="Dynamic"/>
                      
-                     
-                     </td>
-                  
-                    
+                     </td>        
              </tr>
              
              <tr>
                  <td><strong>Nombre de Usuario*</strong></td>
              </tr>
              <tr>
-                 
                   <td>
+                     <com:TSafeHtml>
                      <com:TTextBox ID="txt_nombre_usuario" Text=""/><br />
+                     </com:TSafeHtml>
                      
                      <com:TRequiredFieldValidator ID="val3"
                        ControlToValidate="txt_nombre_usuario"
@@ -76,8 +77,10 @@
              </tr>
              <tr>
                  <td>
-                     <com:TTextBox ID="txt_contrasena" TextMode="Password"/><strong><com:TLabel ID="mensaje_contrasena" Text="Este campo requiere m&iacute;nimo 6 caracteres" forecolor = "darkgrey"/></strong><br />
-                    
+                     <com:TSafeHtml>
+                        <com:TTextBox ID="txt_contrasena" TextMode="Password"/><strong><com:TLabel ID="mensaje_contrasena" Text="Este campo requiere m&iacute;nimo 6 caracteres" forecolor = "darkgrey"/></strong><br />
+                     </com:TSafeHtml>
+                     
                      <com:TRequiredFieldValidator ID="val4"
                        ControlToValidate="txt_contrasena"
                        ErrorMessage="Debe ingresar una contrase&ntilde;a"
@@ -95,9 +98,10 @@
              </tr>
              <tr>
                  <td>
-                    <com:TTextBox ID="txt_contrasena_conf" TextMode="Password"/><br />
-                    
-                    <com:TRequiredFieldValidator ID="val5"
+                     <com:TSafeHtml>
+                     <com:TTextBox ID="txt_contrasena_conf" TextMode="Password"/><br />
+                     </com:TSafeHtml>
+                     <com:TRequiredFieldValidator ID="val5"
                        ControlToValidate="txt_contrasena_conf"
                        ErrorMessage="Debe escribir la contase&ntilde;a de nuevo"
                        Display="Dynamic"/><br />
@@ -117,8 +121,6 @@
              <tr>
                  <td>
                     
-                 
-                     
                         <com:TDatePicker ID="fecha_nac"
                         DateFormat="yyyy-MMMM-dd"
                         Mode="Basic"
@@ -133,7 +135,9 @@
                  <td><strong>Telefono</strong></td>
              </tr>
              <tr>
-                 <td><com:TTextBox ID="txt_telefono" Text=""/></td>
+                  <com:TSafeHtml>
+                  <td><com:TTextBox ID="txt_telefono" Text=""/></td>
+                  </com:TSafeHtml>
              </tr>
              <tr>
                  <td><strong>Correo Electronico*</strong></td>
@@ -157,12 +161,14 @@
              </tr>
              <tr>
                  <td>
-                    <com:TTextBox ID="txt_pregunta" Text=""/><br />
-                    
-                    <com:TRequiredFieldValidator ID="val9"
-                       ControlToValidate="txt_pregunta"
-                       ErrorMessage="Debe escribir una pregunta de seguridad"
-                       Display="Dynamic"/>
+                     <com:TDropDownList ID="dropdown">
+                        <com:TListItem Value="pregunta1" Text="&#191Cu&aacute;l era el nombre de pila de tu mejor amigo de la infancia?"/>
+                        <com:TListItem Value="pregunta2" Text="&#191Cu&aacute;l ser&iacute;a tu trabajo ideal?"/>
+                        <com:TListItem Value="pregunta3" Text="&#191Cu&aacute;l es el nombre de tu mascota?"/>
+                        <com:TListItem Value="pregunta4" Text="&#191En que ciudad se conocieron tus padres?"/>
+                        <com:TListItem Value="pregunta5" Text="&#191Cu&aacute;l era el nombre de tu abuelo paterno?"/>
+                        
+                     </com:TDropDownList>
                   </td>
              </tr>
              <tr>
@@ -170,12 +176,14 @@
              </tr>
              <tr>
                  <td>
-                    <com:TTextBox ID="txt_respuesta" Text=""/><br />
-                    
-                    <com:TRequiredFieldValidator ID="val10"
-                       ControlToValidate="txt_respuesta"
-                       ErrorMessage="Debe escribir una repuesta"
-                       Display="Dynamic"/>
+                     <com:TSafeHtml>
+                     <com:TTextBox ID="txt_respuesta" Text=""/><br />
+                     </com:TSafeHtml>
+                     
+                     <com:TRequiredFieldValidator ID="val10"
+                          ControlToValidate="txt_respuesta"
+                          ErrorMessage="Debe escribir una repuesta"
+                          Display="Dynamic"/>
                   </td>
              </tr>
              

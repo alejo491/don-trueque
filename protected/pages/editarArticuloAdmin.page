@@ -23,15 +23,23 @@
 			</tr>
 			
 			<tr>
-				<td><strong><com:TLabel ID="LblNombre" Text="Nombre: "/></strong><br><br></td>
-				<td><com:TTextBox ID="txtNombre" Text=""/><br><br></td>
+				<td>
+					<strong><com:TLabel ID="LblNombre" Text="Nombre: "/></strong><br><br>
+				</td>
+				<td>
+					<com:TSafeHtml>
+						<com:TTextBox ID="txtNombre" Text=""/><br><br>
+					</com:TSafeHtml>
+				</td>
 			</tr>
 			<tr>
 				<td>
 					<strong><com:TLabel ID="LblDesc" Text="Descripción: "/></strong><br><br>
 				</td>
 				<td>
-					<com:TTextBox ID="TxtDesc" Text="label"/><br><br>
+					<com:TSafeHtml>
+						<com:TTextBox ID="TxtDesc" Text="label"/><br><br>
+					</com:TSafeHtml>
 				</td>
 			</tr>
 			<tr>
