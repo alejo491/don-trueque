@@ -3,8 +3,12 @@
 	<com:TForm ID="form" Method="post">
 		<fieldset><legend><h3>Recuperacion de Contrase&ntilde;a</h3></legend>
 			<br /><p>Debe llenar los siguientes datos para la recuperacion de la contrase&ntilde;a</p>
-			<com:TLabel ID="lbl_NombreU" Text="Nombre de Usuario"/>
-			<com:TTextBox ID="txt_NombreU" Text=""/><br />
+			<com:TSafeHtml>
+				<com:TLabel ID="lbl_NombreU" Text="Nombre de Usuario"/>
+			</com:TSafeHtml>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txt_NombreU" Text=""/><br />
+			</com:TSafeHtml>
 			
 			<com:TRequiredFieldValidator ID="valnombreU"
 				ControlToValidate="txt_NombreU"

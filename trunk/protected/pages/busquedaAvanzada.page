@@ -7,8 +7,17 @@
 			<br />
 			<table>
 				<tr>
-					<td><strong>Palabra Clave:</strong></td><td><com:TTextBox ID="p_clave" Text=""/><br /></td>
+					<td>
+						<strong>Palabra Clave:</strong>
+					</td>
+					
+					<td>
+						<com:TSafeHtml>
+						<com:TTextBox ID="p_clave" Text=""/><br />
+						</com:TSafeHtml>
+					</td>
 				</tr>
+				
 				<tr>
 					<td><strong>Buscar por categoria:</strong></td><td><com:TDropDownList ID="lst_categorias">
 						<com:TListItem Text="Categoria" Value="null" />

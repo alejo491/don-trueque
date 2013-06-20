@@ -9,19 +9,31 @@
 					<com:TImage ID="img_ar1" ImageUrl="" Width="100px" AlternateText=""/>
 					</td>
 					<td>
-					<br /><br /><com:TImage ID="flecha" ImageUrl="assets/images/flecha.gif" Width="100px" AlternateText=""/>
+						<br /><br />
+						<com:TImage ID="flecha" ImageUrl="assets/images/flecha.gif" Width="100px" AlternateText=""/>
 					</td>
 				</tr>
 				<tr>
 				<td>
 					<strong><com:TLabel ID="Nombre" Text="Nombre:"/></strong><br />
-							<com:TLabel ID="Lbl_Nombre1" Text=""/><br />
-							<strong><com:TLabel ID="Ubicacion" Text="Ubicaci&oacute;n:"/></strong><br />
-							<com:TLabel ID="Lbl_Ubicacion1" Text=""/><br />
-							<strong><com:TLabel ID="Descripcion" Text="Descripci&oacute;n:"/></strong><br />
-							<com:TLabel ID="Lbl_Descripcion1" Text=""/><br />
-							<strong><com:TLabel ID="Categoria" Text="Categoria:"/></strong><br />
-							<com:TLabel ID="Lbl_Categoria1" Text=""/><br /><br />
+					<com:TSafeHtml>
+						<com:TLabel ID="Lbl_Nombre1" Text=""/><br />
+					</com:TSafeHtml>
+					
+					<strong><com:TLabel ID="Ubicacion" Text="Ubicaci&oacute;n:"/></strong><br />
+					<com:TSafeHtml>
+						<com:TLabel ID="Lbl_Ubicacion1" Text=""/><br />
+					</com:TSafeHtml>
+					
+					<strong><com:TLabel ID="Descripcion" Text="Descripci&oacute;n:"/></strong><br />
+					<com:TSafeHtml>
+					<com:TLabel ID="Lbl_Descripcion1" Text=""/><br />
+					</com:TSafeHtml>
+					
+					<strong><com:TLabel ID="Categoria" Text="Categoria:"/></strong><br />
+					<com:TSafeHtml>
+						<com:TLabel ID="Lbl_Categoria1" Text=""/><br /><br />
+					</com:TSafeHtml>
 				</td>
 				</tr>
 			</table>
@@ -37,15 +49,25 @@
 				</tr>
 				<tr>
 				<td>
-					<strong>
-						<com:TLabel ID="Nombre2" Text="Nombre:"/></strong><br />
-						<com:TLabel ID="Lbl_Nombre2" Text=""/><br />
+						<strong><com:TLabel ID="Nombre2" Text="Nombre:"/></strong><br />
+						<com:TSafeHtml>
+							<com:TLabel ID="Lbl_Nombre2" Text=""/><br />
+						</com:TSafeHtml>
+						
 						<strong><com:TLabel ID="Ubicacion2" Text="Ubicaci&oacute;n:"/></strong><br />
-						<com:TLabel ID="Lbl_Ubicacion2" Text=""/><br />
+						<com:TSafeHtml>
+							<com:TLabel ID="Lbl_Ubicacion2" Text=""/><br />
+						</com:TSafeHtml>
+						
 						<strong><com:TLabel ID="Descripcion2" Text="Descripci&oacute;n:"/></strong><br />
-						<com:TLabel ID="Lbl_Descripcion2" Text=""/><br />
+						<com:TSafeHtml>
+							<com:TLabel ID="Lbl_Descripcion2" Text=""/><br />
+						</com:TSafeHtml>
+						
 						<strong><com:TLabel ID="Categoria2s" Text="Categoria:"/></strong><br />
-						<com:TLabel ID="Lbl_Categoria2" Text=""/><br /><br />
+						<com:TSafeHtml>
+							<com:TLabel ID="Lbl_Categoria2" Text=""/><br /><br />
+						</com:TSafeHtml>
 				</td>
 				</tr>
 			</table>

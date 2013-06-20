@@ -8,22 +8,30 @@
 		<div id="sidebar2.1" >
 			<fieldset><legend>Iniciar sesion</legend>
 			<table style="height: 109px; width: 150px;">
-			<tbody>
-			<tr>
-			<td>Usuario</td>
-			<td><com:TTextBox ID="txt_usuario" Text=""/></td>
-			</tr>
-			<tr>
-			<td>Contraseña</td>
-			<td><com:TTextBox ID="txt_pass" TextMode="Password"/></td>
-			</tr>
-			<tr>
-			<td></td>
-			<td><com:TButton ID="button"
-				Text="Iniciar sesion"
-				OnClick="iniciarSesion"/><com:TLabel ID="lbl_error" Text=""/></td>
-			</tr>
-			</tbody>
+				<tbody>
+					<tr>
+						<td>Usuario</td>
+						<td>
+							<com:TSafeHtml>
+								<com:TTextBox ID="txt_usuario" Text=""/>
+							</com:TSafeHtml>
+						</td>
+					</tr>
+					<tr>
+						<td>Contraseña</td>
+						<td>
+							<com:TSafeHtml>
+								<com:TTextBox ID="txt_pass" TextMode="Password"/>
+							</com:TSafeHtml>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><com:TButton ID="button"
+							Text="Iniciar sesion"
+							OnClick="iniciarSesion"/><com:TLabel ID="lbl_error" Text=""/></td>
+					</tr>
+				</tbody>
 			</table>
 
 			<a align="center" href="?page=RecuperarContrasena">He olvidado mi
