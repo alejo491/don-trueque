@@ -20,6 +20,22 @@ class articulos extends Tpage{
 		$url=$this->Service->constructUrl('eliminarArticulo',array('id'=>$id));
 		$this->Response->redirect($url);
 	}
+	/*
+	public function changePage($sender,$param)
+	{
+		$this->DataGrid->CurrentPageIndex=$param->NewPageIndex;
+		$this->DataGrid->DataSource=$this->Data;
+		$this->DataGrid->dataBind();
+	}*/
+ 
+	public function pagerCreated($sender,$param)
+	{
+		$param->Pager->Controls->insertAt(0,'Page: ');
+	}
+ /*
+	
+ 
+	*/
 }
 ?>
 

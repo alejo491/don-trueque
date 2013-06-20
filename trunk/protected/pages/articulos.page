@@ -9,15 +9,22 @@
 			<com:TDataGrid ID="listaarticulo"
 				DataKeyField="ID_ARTICULO"
 				AutoGenerateColumns="false"
-				AllowSorting="false"
-				AllowPaging="false"
 				
+				AllowPaging="true"
+				AllowCustomPaging="true"
+				VirtualItemCount="19"
+				PageSize="5"
+				PagerStyle.Mode="Numeric"
+				PagerStyle.HorizontalAlign="Right"
+				OnPageIndexChanged="changePage"
+				OnPagerCreated="pagerCreated"
 				OnEditCommand="editar_articulo" 
 				OnDeleteCommand="borrar_articulo"
 				ItemStyle.BackColor="#BFCFFF"
 				AlternatingItemStyle.BackColor="#E6ECFF"
 				HeaderStyle.BackColor="#BDBDBD"
 				HeaderStyle.ForeColor="BLACK"
+				
 				
 				>
 				
