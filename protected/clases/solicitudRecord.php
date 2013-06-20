@@ -35,6 +35,7 @@ class solicitudRecord extends TActiveRecord
 		
 		
 		
+		
 		$connection->Active=true;
 		$dataReader=$connection->createCommand($sql)->query();
 		$connection->Active=false;
