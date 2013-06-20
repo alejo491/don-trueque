@@ -9,28 +9,28 @@
 		
 		
 		<tr>
-			<td><strong><com:TLabel ID="LblNombre" Text="Nombre: "/></strong><br><br></td>
-			<td><com:TLabel ID="txtNombre" Text=""/>
+			<td><strong><com:TsafeHtml><com:TLabel ID="LblNombre" Text="Nombre: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="txtNombre" Text=""/></com:TsafeHtml>
 			<br><br></td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblApell" Text="Apellido: "/></strong><br><br></td>
-			<td><com:TLabel ID="txtApell" Text="label"/>	
+			<td><strong><com:TsafeHtml><com:TLabel ID="LblApell" Text="Apellido: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="txtApell" Text="label"/>	</com:TsafeHtml>
 			<br><br></td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblFechaNac" Text="Fecha de Nacimiento: "/></strong><br><br></td>
-			<td><com:TLabel ID="txtFecN" Text="label"/>
+			<td><strong><com:TsafeHtml><com:TLabel ID="LblFechaNac" Text="Fecha de Nacimiento: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="txtFecN" Text="label"/></com:TsafeHtml>
 			<br><br></td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="LblTel" Text="Telefono: "/></strong><br><br></td>
-			<td><com:TLabel ID="txtTel" Text="label"/>
+			<td><strong><com:TsafeHtml><com:TLabel ID="LblTel" Text="Telefono: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="txtTel" Text="label"/></com:TsafeHtml>
 			<br><br></td>
 		</tr>
 		<tr>
-			<td><strong><com:TLabel ID="Lblcorreo" Text="Correo: "/></strong><br><br></td>
-			<td><com:TLabel ID="txtCorreo" Text="label"/>
+			<td><strong><com:TsafeHtml><com:TLabel ID="Lblcorreo" Text="Correo: "/></com:TsafeHtml></strong><br><br></td>
+			<td><com:TsafeHtml><com:TLabel ID="txtCorreo" Text="label"/></com:TsafeHtml>
 			<br><br></td>
 		</tr>
 
