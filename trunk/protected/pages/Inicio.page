@@ -1,7 +1,11 @@
 <%@ MasterClass="Masterpage" %>
 
 <com:TContent ID="cphCuerpo">
+<div id="Miga">
+	<com:TLabel ID="ad" Text='<a href="?page=Inicio">Inicio</a>'/>
 	
+</div>
+
 		<h2>Aprende a truequear</h2>
 		
 		<div id="pasos" class="test">

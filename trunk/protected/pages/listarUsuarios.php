@@ -67,6 +67,14 @@ class listarUsuarios extends TPage{
 	}
 	
 	
+	public function changePage($sender,$param)
+	{
+		$this->ver->CurrentPageIndex=$param->NewPageIndex;
+		$offset=$param->NewPageIndex*$this->ver->PageSize;
+		$this->ver->DataSource=$this->ObtenerColumnasDatos($offset,$this->ver->PageSize);
+		$this->ver->dataBind();
+	}
+	
 	function editar_click($sender,$param){
 	
 	
@@ -83,13 +91,7 @@ class listarUsuarios extends TPage{
 		$this->Response->redirect($url);
 	}
 	
-	public function changePage($sender,$param)
-	{
-		$this->ver->CurrentPageIndex=$param->NewPageIndex;
-		$offset=$param->NewPageIndex*$this->ver->PageSize;
-		$this->ver->DataSource=$this->ObtenerColumnasDatos($offset,$this->ver->PageSize);
-		$this->ver->dataBind();
-	}
+	
  
 	
 	

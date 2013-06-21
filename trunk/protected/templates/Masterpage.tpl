@@ -54,6 +54,7 @@
 </div>
 
 <div id="content">
+
 <div id="box1"> <b>Buscar &nbsp;</b>
 <com:TTextBox ID="txt_buscar" Text=""/>
 	<com:TLabel ID="lbl_espacio" Text=" "/>

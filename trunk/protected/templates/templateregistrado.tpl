@@ -71,6 +71,7 @@
 <img class="top" src="assets/images/pic1.jpg" alt="" height="84" width="232" /> </div>
 
 <div id="content">
+
 <div id="box1"> <b>Buscar &nbsp;</b><com:TTextBox ID="txt_buscar" Text=""/>
 	<com:TLabel ID="lbl_espacio" Text=" "/>
 	<com:TButton ID="btn_buscar" Text="Buscar" OnClick="buscar_Clicked"/>

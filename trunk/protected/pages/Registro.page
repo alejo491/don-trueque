@@ -2,7 +2,7 @@
    <com:TContent ID="Cuerpo">
     
     <com:TForm ID="form2">
-       
+         <a href="?page=Inicio">Inicio</a><com:TLabel ID="a01" Text="  >  "/><a href="#">Registrarse</a><br />
     
          <h1>Registro de Nuevo Usuario</h1><br />
          <table>
@@ -161,14 +161,9 @@
              </tr>
              <tr>
                  <td>
-                     <com:TDropDownList ID="dropdown">
-                        <com:TListItem Value="pregunta1" Text="&#191Cu&aacute;l era el nombre de pila de tu mejor amigo de la infancia?"/>
-                        <com:TListItem Value="pregunta2" Text="&#191Cu&aacute;l ser&iacute;a tu trabajo ideal?"/>
-                        <com:TListItem Value="pregunta3" Text="&#191Cu&aacute;l es el nombre de tu mascota?"/>
-                        <com:TListItem Value="pregunta4" Text="&#191En que ciudad se conocieron tus padres?"/>
-                        <com:TListItem Value="pregunta5" Text="&#191Cu&aacute;l era el nombre de tu abuelo paterno?"/>
-                        
-                     </com:TDropDownList>
+                     <com:TSafeHtml>
+                     <com:TTextBox ID="txt_pregunta" Text=""/><br />
+                     </com:TSafeHtml>
                   </td>
              </tr>
              <tr>

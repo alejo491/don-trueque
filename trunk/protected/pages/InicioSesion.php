@@ -7,10 +7,10 @@
 		 
 		 public function iniciarSesion($param){
 		 	session_start();
-			$u=usuarioRecord::finder()->find("NICK=? and PASS=?",array($this->txt_usuario->Text,$this->txt_pass->Text));
+			$u=usuarioRecord::finder()->find("NICK=? and PASS=?",array($this->txt_usuario->Text,md5($this->txt_pass->Text)));
 			if($u==null){
 			session_write_close();
-			$this->lbl_error->Text="No se ha podido iniciar sesion";
+			$this->lbl_error->Text="Usuario y contrase&ntilde;a incorrectos";
 			}else{
 			$_SESSION['id']=$u->ID_USUARIO;
 			$id=$_SESSION['id'];
@@ -18,6 +18,7 @@
 				$url=$this->Service->constructUrl('principaladministrador');
 				$this->Response->redirect($url);
 			}else{
+			
 				$url=$this->Service->constructUrl('principalRegistrado');
 				$this->Response->redirect($url);
 			}

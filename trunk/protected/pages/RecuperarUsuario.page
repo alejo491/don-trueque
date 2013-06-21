@@ -1,0 +1,28 @@
+<%@ MasterClass="templateregistro"%>
+<com:TContent ID="Cuerpo">
+	<com:TForm ID="form" Method="post">
+	<a href="?page=Inicio">Inicio</a><com:TLabel ID="a01" Text="  >  "/><a href="#">Recuperar usuario</a><br />
+		<fieldset><legend><h3>Recuperaci&oacute;n de Usuario</h3></legend>
+			<br /><p>Digita tu cuenta de correo para enviarte el nombre de usuario</p>
+			<com:TSafeHtml>
+				<com:TLabel ID="lbl_NombreU" Text="Correo"/>
+			</com:TSafeHtml>
+			<com:TSafeHtml>
+				<com:TTextBox ID="txt_correo" Text=""/><br />
+			</com:TSafeHtml>
+			<com:TEmailAddressValidator ID="val"
+				ControlToValidate="txt_correo"
+				ErrorMessage="Digita una cuenta de correo valida"
+				Display="Dynamic"/>
+			<br /><br />
+			
+			
+			<com:TLabel ID="error" Text=""/>	
+		
+			
+			
+			<com:TButton ID="btn_Siguiente" Text="Enviar correo" OnClick="siguiente"/>	
+		</fieldset>
+	</com:TForm>
+	
+</com:TContent>
