@@ -1,6 +1,7 @@
 <%@ MasterClass="templateregistro"%>
    <com:TContent ID="Cuerpo">
 	<com:TForm ID="form">
+	<a href="?page=Inicio">Inicio</a><com:TLabel ID="a01" Text="  >  "/><a href="?page=RecuperarContrasena">Recuperar Contrase&ntilde;a</a><com:TLabel ID="a02" Text="  >  "/><a href="#">Pregunta de seguridad</a><br />
 		<fieldset><legend>Recuperar Contrase&ntilde;a</legend>
 				<strong><com:TLabel ID="lbl_preg" Text="Pregunta:"/></strong>
 				<com:TSafeHtml>
@@ -10,7 +11,7 @@
 				<strong><com:TLabel ID="lbl_Resp" Text="Digite su respuesta:"/></strong>
 				
 				<com:TTextBox ID="txt_Resp" Text=""/>
-				<com:TLabel ID="lbl" Text="La respuesta es sencible a mayusculas"/><br /><br />
+				<com:TLabel ID="lbl" Text="La respuesta es sensible a ma&uacute;sculas"/><br /><br />
 				
 				<com:TLabel ID="error" Text=""/><br />
 				<com:TButton ID="btn_Fin" Text="Finalizar" OnClick="fin_Clicked"/>

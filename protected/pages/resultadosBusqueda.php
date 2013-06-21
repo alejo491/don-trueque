@@ -7,14 +7,70 @@
 				$this->setMasterClass($this->Request['ms']);
 		}
 		
-		
-		public function onInit($param){
+		public function onLoad($param)
+		{
+			parent::onLoad($param);
+			if($this->Request['ms']=='Masterpage'){
+				$this->ad->Text='<a href="?page=Inicio">Inicio</a> > <a href="#">Busqueda</a><br />';
+			}
+			if($this->Request['ms']=='templateadministrador'){
+				$this->ad->Text='<a href="?page=principaladministrador">Inicio</a> > <a href="#">Busqueda</a><br />';
+			}
+			if($this->Request['ms']=='templateregistrado'){
+				$this->ad->Text='<a href="?page=principalRegistrado">Inicio</a> > <a href="#">Busqueda</a><br />';
+			}
 			
-			$this->buscar($param);
-				}
+			if(!$this->IsPostBack)
+			{
+				$this->DataList->VirtualItemCount=count($this->buscar());
+				$this->populateData();
+			}
+		}
 		
-		public function buscar($param){
-				
+		
+		 protected function getDataItemCount()
+		{
+			return $this->DataList->VirtualItemCount;
+		}
+ 
+	
+	protected function getData($offset,$limit)
+	{
+		$data=$this->buscar();
+		if($data!=null){
+		return array_slice($data,$offset,$limit);
+		}else{return null;}
+	}
+ 
+	
+	protected function populateData()
+	{
+		$offset=$this->DataList->CurrentPageIndex*$this->DataList->PageSize;
+		$limit=$this->DataList->PageSize;
+		if($offset+$limit>$this->DataList->VirtualItemCount)
+			$limit=$this->DataList->VirtualItemCount-$offset;
+		$data=$this->getData($offset,$limit);
+		if($data!=null){
+		$this->DataList->DataSource=$data;
+		$this->DataList->dataBind();
+		}else{
+		$this->cphCuerpo->controls->add("<h3>No hay resultados</h3>");
+		}
+	}
+ 
+	
+ 
+	
+	public function pageChanged($sender,$param)
+	{
+		$this->DataList->CurrentPageIndex=$param->NewPageIndex;
+		$this->populateData();
+	}
+		
+		
+		
+		public function buscar(){
+				$Datos=array();
 				$this->lbl_titulo->Text="Resultados busqueda: ".$this->Request['id'];
 						if($this->Request['tipo']=='nombre'){
 									//esto es para obtener la respuesta del post 
@@ -50,50 +106,29 @@
 					
 					foreach ($articulo as $i){
 						
-						
-			
-		
 						$imagen=imagenRecord::finder()->find("ID_IMAGEN=?",$i->ID_IMAGEN);
 						$ubicacion=ubicacionRecord::finder()->find("ID_UBICACION=?",$i->ID_UBICACION);
 						$usuario=usuarioRecord::finder()->findByPk($i->ID_USUARIO);
-						$image=new Timage();
-						$image->imageUrl=$imagen->RUTA_IMAGEN;
-						$image->Width="100px";
-						$tabla=new TTable();
-						$row=new TTableRow();
-						$cell_img=new TTableCell();
-						$propietario='<strong>Propietario: </strong>'.$usuario->NICK.' <a href="?page=verPerfil&id='.$usuario->ID_USUARIO.'&ms='.$this->Request['ms'].'">Ver Perfil</a><br />' ;
-						$nombre=new TLabel();
 						
-						$nombre->Text="<strong>Nombre: </strong>".$i->NOMBRE_PRODUCTO."<br />";
-						$desc=new TLabel();
-						$desc->Text="<strong>Descripcion: </strong>".utf8_encode($i->DESCRIPCION)."<br />";
-						$ub=new TLabel();
-						$ub->Text="<strong>Ubicacion: </strong>".utf8_encode($ubicacion->CIUDAD)."<br />";
-						$link='<a href="?page=VerArticulo&id='.$i->ID_ARTICULO.'&ms='.$this->Request['ms'].'">Ver Detalles</a>';
-						$cell_datos=new TTableCell();
-						$cell_datos->controls->add($propietario);
-						$cell_datos->controls->add($nombre);
-						$cell_datos->controls->add($desc);
-						$cell_datos->controls->add($ub);
-						$cell_datos->controls->add($link);
-						$cell_img->controls->add($image);
-						$row->controls->add($cell_img);
-						$row->controls->add($cell_datos);
-						$tabla->controls->add($row);
-						$this->cphCuerpo->controls->add($tabla);
+						$Datos[]=array(
+									   'RUTA_IMAGEN'=>$imagen->RUTA_IMAGEN,
+									   'PROPIETARIO'=>'<strong>Propietario: </strong>'.$usuario->NICK.' <a href="?page=verPerfil&id='.$usuario->ID_USUARIO.'&ms='.$this->Request['ms'].'">Ver Perfil</a><br />',
+									   'NOMBRE'=>"<strong>Nombre: </strong>".$i->NOMBRE_PRODUCTO."<br />",
+									   'DESC'=>"<strong>Descripcion: </strong>".utf8_encode($i->DESCRIPCION)."<br />",
+									   'UBI'=>"<strong>Ubicacion: </strong>".utf8_encode($ubicacion->CIUDAD)."<br />",
+									   'LINK'=>'<a href="?page=VerArticulo&id='.$i->ID_ARTICULO.'&ms='.$this->Request['ms'].'">Ver Detalles</a>',
 						
-					
-					
+						);
+						
+						
 						}
 						
 					}else{
-						$error="<h3>No se han encontrado articulos</h3>";
-						$this->cphCuerpo->controls->add($error);
-					}/*
-					$this->Resultados->DataSource=$b;
-					$this->Resultados->DataBind();*/
+						$Datos=null;
+					}
+					return $Datos;
 				}
+				
 				
 		}
 				

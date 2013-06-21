@@ -1,12 +1,20 @@
 <?php
-	
-	class RecuperacionExitosa extends TPage{
-		public function onInit($param) { 
+class RecuperarUsuario extends Tpage{
+	public function onInit($param) { 
 		   parent::onInit($param); 
-		   Prado::using('Application.phpmailer.PHPMailer');
-			$usuario=usuarioRecord::finder()->find("NICK=?",$this->Request['nick']);
-		    $this->correo->Text=$usuario->CORREO;
-		    $mail = new PHPMailer;
+		   
+				  
+
+		 }
+	public function siguiente($sender,$param){
+			
+			$usuario=usuarioRecord::finder()->find("CORREO=?", $this->txt_correo->Text);
+			
+		  if($usuario!=null){
+			Prado::using('Application.phpmailer.PHPMailer');
+			
+			
+			$mail = new PHPMailer;
 
 			$mail->IsSMTP();                                     
 			$mail->Host = 'smtp.gmail.com'; 
@@ -14,13 +22,13 @@
 			$mail->SMTPAuth = true;                               
 			$mail->Username = 'dontrueque.com';                          
 			$mail->Password = 'software3';                         
-			                          
+									  
 
 			$mail->From = 'dontrueque.com@gmail.com';
 			$mail->FromName = 'Administrador Dontrueque';
 		 
 			$mail->AddAddress($usuario->CORREO,"$usuario->NOMBRE_USUARIO $usuario->APELLIDO_USUARIO");    
-			         
+					 
 			
 /*
 			$mail->WordWrap = 50;                                
@@ -29,14 +37,14 @@
 			*/  
 			$mail->IsHTML(true);                                 
 
-			$mail->Subject = '[Don Trueque] Recuperar Contraseña';
-			$mail->Body    = "<pre>Alguien ha solicitado la contraseña de
-la siguiente cuenta:
+			$mail->Subject = '[Don Trueque] Recuperar ContraseÃ±a';
+			$mail->Body    = "<pre>Alguien ha solicitado tu nombre de usuario en DonTruque
+
 							  
 
 Nombre de usuario: $usuario->NICK
-Contraseña: <h1>$usuario->PASS</h1>
-Si ha sido un error, ignora este correo y no pasará nada.
+
+Si ha sido un error, ignora este correo y no pasarÃ¡ nada.
 
 Ahora puedes ingresar a nuestra pagina <a href="."http://localhost/don-trueque/?page=InicioSesion".">Don Trueque</a> e iniciar sesion<pre>";
 			$mail->AltBody = 'S';
@@ -46,17 +54,15 @@ Ahora puedes ingresar a nuestra pagina <a href="."http://localhost/don-trueque/?
 			   echo 'Mailer Error: ' . $mail->ErrorInfo;
 			   exit;
 			}
-
+			$url=$this->Service->constructUrl('RUsuarioExitoso',array('correo'=>$this->txt_correo->Text));
+			$this->Response->redirect($url);
+		  }else{
+			$this->error->Text="No hay usuario con esta cuenta de correo";
+		  }
 			
-
 		}
 
-			 public function Inicio_click($sender,$param){
-		 	$url=$this->Service->constructUrl('Inicio');
-			$this->Response->redirect($url);
-		 }
-	}
-
+}
 
 
 ?>

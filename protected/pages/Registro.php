@@ -6,6 +6,7 @@
             $this->lbl_val->Visible="False";
             $this->lbl_val1->Enabled="False";
             $this->lbl_val1->Visible="False";
+          
          
          }
   
@@ -39,6 +40,7 @@
                            $usuario->FECHA_N=date('Y-m-d',$this->fecha_nac->TimeStampFromText);
                            $usuario->TELEFONO=$this->txt_telefono->Text;
                            $usuario->PREGUNTA=$this->txt_pregunta->Text;
+                           
                            $usuario->RESPUESTA=$this->txt_respuesta->Text;
                            $usuario->CORREO=$this->txt_correo->Text;
                            $usuario->NICK=$this->txt_nombre_usuario->Text;

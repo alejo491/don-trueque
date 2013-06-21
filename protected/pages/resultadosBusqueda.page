@@ -2,29 +2,51 @@
 
 
 <com:TContent ID="cphCuerpo">
-	<div id="test334">
-		
-	
-	<h1 color="grey"><com:TLabel ID="lbl_titulo" Text=""/></h1><br /><br /><br />
-	
-	<com:TDataGrid ID="Resultados"
-		DataKeyField=""
-		AutoGenerateColumns="false"
-		AllowSorting="false"
-		AllowPaging="false"
-		OnItemCreated="datalist_OnItemCreated"
-		OnEditCommand="datalist_OnEdit"
-		OnCancelCommand="datalist_OnCancel"
-		OnUpdateCommand="datalist_OnUpdate"
-		OnDeleteCommand="datalist_OnDelete">
-		
-	</com:TDataGrid>
-	
-	<com:TPager ID="pager"
-		ControlToPaginate="Resultados"
-		OnPageIndexChanged="RenderCallBack"
-		Mode="Numeric"/>
-	
-	
-	</div>
+<com:TLabel ID="ad" Text=''/>
+<h1 color="grey"><com:TLabel ID="lbl_titulo" Text=""/></h1><br /><br /><br />	
+<div align="middle">
+ 
+<com:TDataList
+	 ID="DataList"
+	 AllowPaging="true"
+	 AllowCustomPaging="true"
+	 PageSize="4"
+	 Cellpadding="4"
+	 EnableViewState="true"
+	 RepeatColumns="1"
+	 RepeatDirection="Horizontal"
+	>
+ 
+
+ 
+<prop:ItemTemplate>
+<table>
+
+<tr>
+  <td><com:TImage ID="a1"  Width="100px" 	ImageUrl="<%#$this->DataItem['RUTA_IMAGEN']%>" /><br /><br /></td>
+  <td><%#$this->DataItem['PROPIETARIO']%>
+  	  <%#$this->DataItem['NOMBRE']%>
+	  <%#$this->DataItem['DESC']%>
+	  <%#$this->DataItem['UBI']%>
+	  <%#$this->DataItem['LINK']%><br /><br />
+  
+  </td>
+
+  
+</tr>
+</table>
+</prop:ItemTemplate>
+ 
+</com:TDataList>
+ <com:TPager ID="Pager"
+	ControlToPaginate="DataList"
+	PageButtonCount="3"
+	Mode="Numeric"
+	OnPageIndexChanged="pageChanged"
+	/>
+
+<br/>
+
+</div>
+
 </com:TContent>

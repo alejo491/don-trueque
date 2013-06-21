@@ -2,10 +2,10 @@
 
 <com:TContent ID="Cuerpo">
 	<com:TForm ID="form">
-	
-		<P>Su respuesta de seguridad ha sido correcta</p>
+	<a href="?page=Inicio">Inicio</a><com:TLabel ID="a01" Text="  >  "/><a href="?page=RecuperarUsuario">Recuperar usuario</a><com:TLabel ID="a02" Text="  >  "/><a href="#">Recuperacion Exitosa</a><br />
+		
 		Se ha enviado un correo a <strong><com:TLabel ID="correo" Text=""/></strong>
-		con la contrase&ntilde;a para que pueda iniciar sesi&oacute;n de nuevo
+		con el nombre de usuario para que pueda iniciar sesi&oacute;n de nuevo
 		
 		
 		<br/>

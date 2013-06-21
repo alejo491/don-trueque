@@ -1,8 +1,9 @@
 <%@ MasterClass="templateregistro"%>
 <com:TContent ID="Cuerpo">
 	<com:TForm ID="form" Method="post">
-		<fieldset><legend><h3>Recuperacion de Contrase&ntilde;a</h3></legend>
-			<br /><p>Debe llenar los siguientes datos para la recuperacion de la contrase&ntilde;a</p>
+	<a href="?page=Inicio">Inicio</a><com:TLabel ID="a01" Text="  >  "/><a href="#">Recuperar Contrase&ntilde;a</a><br />
+		<fieldset><legend><h3>Recuperaci&oacute;n de Contrase&ntilde;a</h3></legend>
+			<br /><p>Debe llenar los siguientes datos para la recuperaci&oacute;n de la contrase&ntilde;a</p>
 			<com:TSafeHtml>
 				<com:TLabel ID="lbl_NombreU" Text="Nombre de Usuario"/>
 			</com:TSafeHtml>

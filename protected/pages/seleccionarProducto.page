@@ -1,6 +1,6 @@
 
    <com:TContent ID="cphCuerpo">
-		<div>
+		<div align="middle">
 			<h2>Para poder hacer una propuesta de trueque primero debes escoger que articulo vas a ofrecer</h2>
 			
 			<fieldset><legend>Articulo a truquear</legend>
@@ -38,7 +38,49 @@
 		</div>
 		<hr /><br />
 		<h2>Escoge un articulo</h2>
-		
+		<div align="middle">
+ 
+				<com:TDataList
+					 ID="DataList"
+					 AllowPaging="true"
+					 AllowCustomPaging="true"
+					 PageSize="4"
+					 EnableViewState="true"
+					 RepeatColumns="1"
+					 RepeatDirection="Horizontal"
+					>
+				 
+
+				 
+				<prop:ItemTemplate>
+				<table>
+
+				<tr>
+				  <td><com:TImage ID="a1"  Width="100px" 	ImageUrl="<%#$this->DataItem['RUTA_IMAGEN']%>" /></td>
+				  <td>
+					  <%#$this->DataItem['NOMBRE']%>
+					  <%#$this->DataItem['DESC']%>
+					  <%#$this->DataItem['UBI']%>
+					  <%#$this->DataItem['LINK']%>
+				  
+				  </td>
+
+				  
+				</tr>
+				</table>
+				</prop:ItemTemplate>
+				 
+				</com:TDataList>
+				 <com:TPager ID="Pager"
+					ControlToPaginate="DataList"
+					PageButtonCount="3"
+					Mode="Numeric"
+					OnPageIndexChanged="pageChanged"
+					/>
+
+				<br/>
+
+				</div>
 		
 	
 </com:TContent>   

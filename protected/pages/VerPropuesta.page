@@ -9,7 +9,7 @@
 					<com:TImage ID="img_ar1" ImageUrl="" Width="100px" AlternateText=""/>
 					</td>
 					<td>
-						<br /><br />
+						
 						<com:TImage ID="flecha" ImageUrl="assets/images/flecha.gif" Width="100px" AlternateText=""/>
 					</td>
 				</tr>
@@ -46,6 +46,7 @@
 						<h2>Requieren este producto</h2><br />
 						<com:TImage ID="img_ar2" ImageUrl="" Width="100px" AlternateText=""/>
 					</td>
+					<td></td>
 				</tr>
 				<tr>
 				<td>
@@ -69,6 +70,7 @@
 							<com:TLabel ID="Lbl_Categoria2" Text=""/><br /><br />
 						</com:TSafeHtml>
 				</td>
+				
 				</tr>
 			</table>
 			</div>

@@ -3,7 +3,7 @@
 
 
 <com:TContent ID="cphCuerpo">
-	
+	<a href="?page=Inicio">Inicio</a><com:TLabel ID="a01" Text="  >  "/><a href="#">Inicio Sesion</a>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" />
 		<div id="sidebar2.1" >
 			<fieldset><legend>Iniciar sesion</legend>
@@ -36,8 +36,9 @@
 
 			<a align="center" href="?page=RecuperarContrasena">He olvidado mi
 			contraseña</a><br />
-			<a align="center" href="#slidebar2">He olvidado mi
-			usuario</a><br /><br />
+			<a align="center" href="?page=RecuperarUsuario">He olvidado mi
+			nombre de usuario</a><br />
+			<br />
 			
 		</div>	
 	
