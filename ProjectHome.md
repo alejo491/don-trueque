@@ -1,0 +1,1 @@
+Proyecto realizado para la materia Ingeniería de software 3 del programa Ingeniería de Sistemas de la Universidad del Cauca, este proyecto consiste es el desarrollo de una aplicación web que permita a sus usuario el intercambio de articulos, esta aplicacion debe desarrollarse utilizando desarrollo centrado en el usuario, patrones de presentacon, usabilidad y el patron MVC.
